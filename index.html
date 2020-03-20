@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>wezom-test</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/grid.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="libs/font-awersome/css/font-awesome.min.css">
 </head>
@@ -12,18 +13,22 @@
 
 <header class = "head-line">
 <div class="container">
+<div class="col-5">
 <nav class = "wrapper">
 	<ul class="about">
-		<li class="col-2"><a href="#">Главная</a></li>
-		<li class="col-2"><a href="#">О компании</a></li>
-		<li class="col-2"><a href ="#">Ссылка 1</a></li>
-		<li class="col-2"><a href ="#">Ссылка 2</a></li>
-		<li class="col-2"><a href ="#">Ссылка 3</a></li>
+		<li class="about__items"><a href="#">Главная</a></li>
+		<li class="about__items"><a href="#">О компании</a></li>
+		<li class="about__items"><a href ="#">Ссылка 1</a></li>
+		<li class="about__items"><a href ="#">Ссылка 2</a></li>
+		<li class="about__items"><a href ="#">Ссылка 3</a></li>
 	</ul>
 </nav>
+</div>
 
 <div class="enter">
+	<div class="col-12">
 	<a href = "#">вход</a>
+	</div>
 </div>
 </div>
 </header>
@@ -32,50 +37,92 @@
 <header>
 
 	<div class="container">
-
+	<div class="col-12">
 	<div class="message"><a class="message__link">5</a>
+	</div>
 	</div>
 
 	<!--logo-->
+
 	<div class="head_contact">
-	<h1 class = "hid">test wezom</h1>
-	<img src = "img/Test.png" alt="wezom-test" class="logo">
+		<div class="col-3">
+		<h1 class = "hid">test wezom</h1>
+		<img src = "img/Test.png" alt="wezom-test" class="logo">
+		</div>
 <!--tel-->
+<div class="col-5">
 <div class="contact">
 	<div class="tel">+380 98 170 00 740</div>
 	<div class="tel">+380 98 170 00 740</div>
 	<div class="recall"><i class="far fa-phone-alt"></i>Перезвонить мне</div>
 </div>
+</div>
 
 <!--navigation-->
+<div class="col-4">
 <div class="navigation">
 	<div class="basket">
-		<a class="navigation__link"><i class="fas fa-comment-alt"></i>корзина</a>
+		<a class="navigation__link">корзина</a>
 	</div>
 	<div class="favorite"><a class="navigation__link">избранное</a></div>
 	<div class="comparison"><a class="navigation__link">сравнение</a></div>
-
+</div>
 </div>
 <div class="clearfix"></div>
 
 </div>
 </div>
 </header>
-<!--menu-->
-<div>
-	<div class="container">
-		<ul class="menu__list">
-	    <li class="menu__list__white">Меню</li>
-	    <li class="menu__list__black">ССылка 1</li>
-	    <li class="menu__list__black">ССылка 2</li>
-			<li class="menu__list__black">ССылка 3</li>
-	    <li class="menu__list__black">ССылка 4</li>
-			<li class="menu__list__black">ССылка 5</li>
-	    <li class="menu__list__black">ССылка 6</li>
-			<li class="menu__list__black">ССылка 7</li>
-	   </ul>
-	</div>
+
+<!--site-->
+<div class="container">
+		<div class="col-3">
+			<!--menu-->
+			<ul class="menu__list">
+		    <li class="menu__list__white">Меню</li>
+		    <li class="menu__list__black">ССылка 1</li>
+		    <li class="menu__list__black">ССылка 2</li>
+				<li class="menu__list__black">ССылка 3</li>
+		    <li class="menu__list__black">ССылка 4</li>
+				<li class="menu__list__black">ССылка 5</li>
+		    <li class="menu__list__black">ССылка 6</li>
+				<li class="menu__list__black">ССылка 7</li>
+		   </ul>
+		</div>
+
+<!--FILTER-->
+<div class="filter__site">
+		<div class="col-9">
+			<div class="col-7">
+				<div class="filter">Поиск по сайту</div>
+			</div>
+
+			<div class="col-3">
+					<div class="category">Все категории</div>
+			</div>
+
+				<div class="col-2">
+					<div class="search">Поиск</div>
+				</div>
+			</div>
 </div>
+
+		<!--GREY site-->
+		<div class="col-9">
+						<div class="find">
+						<ul class="">
+						<li class=""><span class="car"></span>ССылка 1</li>
+						<li class=""><span class="big"></span>ССылка 2</li>
+						<li class=""><span class="shina"></span>ССылка 3</li>
+						<li class=""><span class="oil"></span>ССылка 4</li>
+						<li class=""><span class="battery"></span>ССылка 5</li>
+					</ul>
+				 </div>
+		</div>
+
+</div>
+
+
 
 </body>
 </html>
