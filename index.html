@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<title>wezom-test</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="libs/font-awersome/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -27,7 +30,9 @@
 
 <div class="enter">
 	<div class="col-12">
+	<div class="enter__pic">
 	<a href = "#">вход</a>
+	</div>
 	</div>
 </div>
 </div>
@@ -54,7 +59,7 @@
 <div class="contact">
 	<div class="tel">+380 98 170 00 740</div>
 	<div class="tel">+380 98 170 00 740</div>
-	<div class="recall"><i class="far fa-phone-alt"></i>Перезвонить мне</div>
+	<div class="recall"><span>Перезвонить мне</span></div>
 </div>
 </div>
 
@@ -79,7 +84,7 @@
 		<div class="col-3">
 			<!--menu-->
 			<ul class="menu__list">
-		    <li class="menu__list__white">Меню</li>
+		    <span></span><li class="menu__list__white">Меню</li>
 		    <li class="menu__list__black">ССылка 1</li>
 		    <li class="menu__list__black">ССылка 2</li>
 				<li class="menu__list__black">ССылка 3</li>
@@ -93,36 +98,362 @@
 <!--FILTER-->
 <div class="filter__site">
 		<div class="col-9">
-			<div class="col-7">
-				<div class="filter">Поиск по сайту</div>
+			<form class="scan">
+			<div class="col-8">
+				<div class="filter">
+						<input type="text" placeholder="" class="filter_in">
+						<label for="" class="filter_lab">Поиск по сайту</label>
+
+				</div>
 			</div>
 
-			<div class="col-3">
-					<div class="category">Все категории</div>
+
+			<div class="col-2">
+				<div class="category">
+				<select class="category_selec" id="looking">
+				  <option value="1">Все категории</option>
+				  <option value="2">Пункт 1</option>
+				</select>
+
+			</div>
 			</div>
 
 				<div class="col-2">
-					<div class="search">Поиск</div>
+					<button class="search">Поиск</button>
 				</div>
+				</form>
 			</div>
 </div>
 
-		<!--GREY site-->
+		<!--GREY site top-->
 		<div class="col-9">
 						<div class="find">
 						<ul class="">
-						<li class=""><span class="car"></span>ССылка 1</li>
-						<li class=""><span class="big"></span>ССылка 2</li>
-						<li class=""><span class="shina"></span>ССылка 3</li>
-						<li class=""><span class="oil"></span>ССылка 4</li>
-						<li class=""><span class="battery"></span>ССылка 5</li>
+						<li class=""><a href="#"><span class="car"></span>ССылка 1</a></li>
+						<li class=""><a href="#"><span class="big"></span>ССылка 2</a></li>
+						<li class=""><a href="#"><span class="shina"></span>ССылка 3</a></li>
+						<li class=""><a href="#"><span class="oil"></span>ССылка 4</a></li>
+						<li class=""><a href="#"><span class="battery"></span>ССылка 5</a></li>
 					</ul>
 				 </div>
+</div>
+	<!--GREY site-->
+	<div class="col-9">
+		<div class="colorfull">
+			<div class="col-3">
+			<div class="tab">
+				<ul>
+					<li><a href="#">Tab 1</a></li>
+					<li><a href="#">Tab 2</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+</div>
+
+<div class="col-9">
+
+</div>
+</div>
+<div class="clearfix"></div>
+<!-------------Заглавная--------------------->
+
+<section class="goods">
+	<div class="container">
+		<div class="col-9">
+			<h2 class="cards">Карточки товаров</h2>
+		</div>
+
+		<div class="col-3">
+			<div class="go">
+				<span class="catalog">Ссылка в каталог</span>
+				<span class="arrow">&#8594;</span>
+			</div>
+		</div>
+		</div>
+</section>
+<!-------------Карточки товаров--------------------->
+<section class="product">
+	<div class="container">
+<!--1-->
+<div class="col-3 products">
+	<div class="brend">Mark</div>
+	<div class="description"><p>Антифриз Fosser Antifreeze</p>FA 12 Readymix 1 л Concentrat, Germany</div>
+	<div class="rate"></div>
+	<div class="feedback">Отзывы (10)</div>
+	<div class="availabe">В наличии: 24 шт.</div>
+
+	<div class="product_pics">
+		<div class="product_icons">
+			<div class="summer"><span class="summer_text">Летняя</span></div>
+			<div class="usual"><span class="usual_text">легковая</span></div>
+			<div class="new"><span class="new_text">новая</span></div>
+		</div>
+		<div class="preview"></div>
+	</div>
+<div class="clearfix"></div>
+
+	<div class="product_labe">
+		<div class="new_green"><span>Новинка</span></div>
+		<div class="hit"><span>Хит</span></div>
+		<div class="sale"><span>скидка</span></div>
+	</div>
+<div class="clearfix"></div>
+
+
+	<div class="price">
+		<div col-1>
+			<div class="price_full">
+				<div class="price_full_big">599</div>
+				<div class="price_full_sml">грн.</div>
+			</div>
+		</div>
+
+		<div col-1>
+		<div class="price_sale">
+			<div class="price_line"></div>
+			<div class="price_sale_text">11 250 грн.</div>
+		</div>
+		</div>
+
+		<div class="tobuy">
+			<div class="tobuy_icon"><span>купить товар</span></div>
+		</div>
+
+	<div class="simile">
+
+			<div class="simile01">
+				<div class="tobuy_compare"></div>
+				<div class="tobuy_compare_text">Сравнить товар</div>
+			</div>
+
+			<div class="simile01">
+			<div class="tobuy_favorite"></div>
+				<div class="tobuy_favorite">В избранное</div>
+			</div>
+
+	</div>
+
+</div>
+</div>
+	<!--2-->
+	<div class="col-3 products">
+		<div class="brend">Mark</div>
+		<div class="description"><p>Антифриз Fosser Antifreeze</p>FA 12 Readymix 1 л Concentrat, Germany</div>
+		<div class="rate"></div>
+		<div class="feedback">Отзывы (10)</div>
+		<div class="availabe">В наличии: 24 шт.</div>
+
+		<div class="product_pics">
+			<div class="product_icons">
+				<div class="summer"><span class="summer_text">Летняя</span></div>
+				<div class="usual"><span class="usual_text">легковая</span></div>
+				<div class="new"><span class="new_text">новая</span></div>
+			</div>
+			<div class="preview"></div>
+		</div>
+<div class="clearfix"></div>
+
+		<div class="product_labe">
+			<div class="new_green"><span>Новинка</span></div>
+			<div class="hit"><span>Хит</span></div>
+			<div class="sale"><span>скидка</span></div>
+		</div>
+<div class="clearfix"></div>
+
+
+		<div class="price">
+			<div col-1>
+				<div class="price_full">
+					<div class="price_full_big">599</div>
+					<div class="price_full_sml">грн.</div>
+				</div>
+			</div>
+
+			<div col-1>
+			<div class="price_sale">
+				<div class="price_line"></div>
+				<div class="price_sale_text">11 250 грн.</div>
+			</div>
+			</div>
+
+			<div class="tobuy">
+				<div class="tobuy_icon"><span>купить товар</span></div>
+			</div>
+
+		<div class="simile">
+
+				<div class="simile01">
+					<div class="tobuy_compare"></div>
+					<div class="tobuy_compare_text">Сравнить товар</div>
+				</div>
+
+				<div class="simile01">
+				<div class="tobuy_favorite"></div>
+					<div class="tobuy_favorite">В избранное</div>
+				</div>
+
 		</div>
 
 </div>
+</div>
+<!--3-->
+<div class="col-3 products">
+	<div class="brend">Mark</div>
+	<div class="description"><p>Антифриз Fosser Antifreeze</p>FA 12 Readymix 1 л Concentrat, Germany</div>
+	<div class="rate"></div>
+	<div class="feedback">Отзывы (10)</div>
+	<div class="availabe">В наличии: 24 шт.</div>
+
+	<div class="product_pics">
+		<div class="product_icons">
+			<div class="summer"><span class="summer_text">Летняя</span></div>
+			<div class="usual"><span class="usual_text">легковая</span></div>
+			<div class="new"><span class="new_text">новая</span></div>
+		</div>
+		<div class="preview"></div>
+	</div>
+<div class="clearfix"></div>
+
+	<div class="product_labe">
+		<div class="new_green"><span>Новинка</span></div>
+		<div class="hit"><span>Хит</span></div>
+		<div class="sale"><span>скидка</span></div>
+	</div>
+<div class="clearfix"></div>
 
 
+	<div class="price">
+		<div col-1>
+			<div class="price_full">
+				<div class="price_full_big">599</div>
+				<div class="price_full_sml">грн.</div>
+			</div>
+		</div>
 
+		<div col-1>
+		<div class="price_sale">
+			<div class="price_line"></div>
+			<div class="price_sale_text">11 250 грн.</div>
+		</div>
+		</div>
+
+		<div class="tobuy">
+			<div class="tobuy_icon"><span>купить товар</span></div>
+		</div>
+
+	<div class="simile">
+
+			<div class="simile01">
+				<div class="tobuy_compare"></div>
+				<div class="tobuy_compare_text">Сравнить товар</div>
+			</div>
+
+			<div class="simile01">
+			<div class="tobuy_favorite"></div>
+				<div class="tobuy_favorite">В избранное</div>
+			</div>
+
+	</div>
+
+</div>
+</div>
+<!--4-->
+		<div class="col-3 products">
+			<div class="brend">Mark</div>
+			<div class="description"><p>Антифриз Fosser Antifreeze</p>FA 12 Readymix 1 л Concentrat, Germany</div>
+			<div class="rate"></div>
+			<div class="feedback">Отзывы (10)</div>
+			<div class="availabe">В наличии: 24 шт.</div>
+
+			<div class="product_pics">
+				<div class="product_icons">
+					<div class="summer"><span class="summer_text">Летняя</span></div>
+					<div class="usual"><span class="usual_text">легковая</span></div>
+					<div class="new"><span class="new_text">новая</span></div>
+				</div>
+				<div class="preview"></div>
+			</div>
+<div class="clearfix"></div>
+
+			<div class="product_labe">
+				<div class="new_green"><span>Новинка</span></div>
+				<div class="hit"><span>Хит</span></div>
+				<div class="sale"><span>скидка</span></div>
+			</div>
+<div class="clearfix"></div>
+
+
+			<div class="price">
+				<div col-1>
+					<div class="price_full">
+						<div class="price_full_big">599</div>
+						<div class="price_full_sml">грн.</div>
+					</div>
+				</div>
+
+				<div col-1>
+				<div class="price_sale">
+					<div class="price_line"></div>
+					<div class="price_sale_text">11 250 грн.</div>
+				</div>
+				</div>
+
+				<div class="tobuy">
+					<div class="tobuy_icon"><span>купить товар</span></div>
+				</div>
+
+			<div class="simile">
+
+					<div class="simile01">
+						<div class="tobuy_compare"></div>
+						<div class="tobuy_compare_text">Сравнить товар</div>
+					</div>
+
+					<div class="simile01">
+					<div class="tobuy_favorite"></div>
+						<div class="tobuy_favorite">В избранное</div>
+					</div>
+
+			</div>
+
+	</div>
+</div>
+</section>
+<div class="clearfix"></div>
+<!----------FOOTER---------->
+<footer>
+	<!--BLOCKS-->
+<div class="container">
+	<div class="blocks">
+		<div class="col-5">
+			<div class="blocks01 blocks_line01">Блок 1</div>
+			<div class="course">Будьте в курсе новостей и новинок!</div>
+			<div class="subscription">Подписывайтесь на рассылку</div>
+			<div class="blocks01 blocks_line01">
+				<div class="email">Укажите свой email для подписки</div>
+				<div class="button_discrabe">подписаться</div>
+			</div>
+		</div>
+<!--
+		<div class="col-2">
+			<div class="blocks02 blocks_line02">Блок ссылок 1</div>
+		</div>
+		<div class="col-2">
+			<div class="blocks03 blocks_line03">Блок ссылок 2</div>
+		</div>
+
+		<div class="col-2">
+			<div class="blocks04 blocks_line04">Блок ссылок 3</div>
+		</div>
+-->
+	</div>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<!--<script src="stylesheet" href="libs/jquery-ui/jquery-ui.min.js"></script>-->
 </body>
 </html>

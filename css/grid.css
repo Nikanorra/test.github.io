@@ -1,10 +1,10 @@
-/*.row::after {
+.row::after {
 	content: '';
 	height: 0;
 	display: block;
 	clear: both;
 }
-
+/*
 .row-expand {
 	margin: 0 -10px;
 }
@@ -58,7 +58,7 @@
 
 .col-4 {
 	float: left;
-	width: 33.333333%;
+	width: 33.33333333%;
 }
 
 .col-3 {
