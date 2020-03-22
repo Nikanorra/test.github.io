@@ -1,4 +1,5 @@
 $ (document).ready(function() {
-	$("#looking").selectlooking();
+
+	$('#category_selec').selectmenu();
 
 });
