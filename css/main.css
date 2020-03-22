@@ -268,8 +268,10 @@ a {
   text-indent: 1.5em;
 }
 
-.category_option {
-
+/*---убрать голубую обводку---*/
+.category_option:active, :hover, :focus {
+      outline: 0;
+      outline-offset: 0;
 }
 
 }
