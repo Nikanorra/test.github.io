@@ -308,21 +308,22 @@ a {
   color: #a9aeb3;
   width: 20%;
   text-align: center;
-
 }
-
-.find a:hover {
+/*.find a:hover {
   color: white;
   background: url("../img/filter_all.png") no-repeat #606a76;
   background-position: 0% 23%
   width: 55px;
   height: 20px;
-}
+}*/
+
 .find span {
   display: inline-block;
 }
+
+
 .car {
-  background: url("../img/filter_all.png") no-repeat;
+  background: url("../img/filter_all.png") no-repeat #606a76;
   width: 55px;
   height: 20px;
   background-position: 0% 93%;
@@ -330,16 +331,28 @@ a {
 
 /*; */
 .big {
-
+  background: url("../img/filter_all.png") no-repeat;
+  width: 55px;
+  height: 30px;
+  background-position: 35% 91%;
 }
 .shina {
-
+  background: url("../img/filter_all.png") no-repeat;
+  width: 39px;
+  height: 30px;
+  background-position: 63% 92%;
 }
 .oil {
-
+  background: url("../img/filter_all.png") no-repeat;
+  width: 40px;
+  height: 25px;
+  background-position: 80% 93%;
 }
 .battery {
-
+  background: url("../img/filter_all.png") no-repeat;
+  width: 40px;
+  height: 20px;
+  background-position: 100% 92%;
 }
 /*GREY site*/
 .colorfull {
@@ -348,23 +361,51 @@ a {
   height: 500px;
 }
 .tab {
-  float: left;
   line-height: 44px;
   font-size: 14px;
   color: #696969;
   background: white;
-  width: 50%;
   text-align: center;
-  display: block;
-}
-.tab_button {
-  float: left;
+  width: 282px;
+  height: 44px;
 }
 
-.tab_button:hover {
+.tab_button01, .tab_button02 {
+  float: left;
+  line-height: 38px;
+  color: #696969;
+  background: white;
+  margin: 3px;
+  width: 47.8%;
+}
+.tab_button01:hover, .tab_button02:hover {
+  float: left;
+  line-height: 38px;
   color: #fff;
   background: #ff8900;
+  margin: 3px;
 }
+
+/*SELECTS*/
+.selects {
+  line-height: 44px;
+  font-size: 14px;
+  color: #696969;
+  background: white;
+  text-align: center;
+  height: 44px;
+  width: 100px;
+  margin-top: 23px;
+}
+
+.selects  {
+  float: left;
+  line-height: 38px;
+  color: #696969;
+  background: white;
+  margin: 0 10px;
+}
+
 /*Заглавная*/
 .goods {
   padding-top: 45px;
