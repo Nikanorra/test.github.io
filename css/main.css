@@ -308,23 +308,46 @@ a {
   color: #a9aeb3;
   width: 20%;
   text-align: center;
-}
-.find a:hover {
-  color: white;
-}
-.find span {
-  background: url("../img/filter_all.png") no-repeat;
-  display: inline-block;
+
 }
 
+.find a:hover {
+  color: white;
+  background: url("../img/filter_all.png") no-repeat #606a76;
+  background-position: 0% 23%
+  width: 55px;
+  height: 20px;
+}
+.find span {
+  display: inline-block;
+}
+.car {
+  background: url("../img/filter_all.png") no-repeat;
+  width: 55px;
+  height: 20px;
+  background-position: 0% 93%;
+}
+
+/*; */
+.big {
+
+}
+.shina {
+
+}
+.oil {
+
+}
+.battery {
+
+}
 /*GREY site*/
 .colorfull {
   background: #696969;
   padding: 25px 36px;
   height: 500px;
 }
-
-.tab a {
+.tab {
   float: left;
   line-height: 44px;
   font-size: 14px;
@@ -334,13 +357,14 @@ a {
   text-align: center;
   display: block;
 }
-
+.tab_button {
+  float: left;
 }
-.tab a:hover {
+
+.tab_button:hover {
   color: #fff;
   background: #ff8900;
 }
-
 /*Заглавная*/
 .goods {
   padding-top: 45px;
@@ -657,4 +681,71 @@ footer {
   line-height: 50px;
   color: #ffffff;
   background: #ff8900;
+}
+/*мелкие блоки*/
+.blocks02_bg {
+  font-size: 20px;
+  line-height: 36px;
+  color: #cbcbcb;
+}
+.blocks02_sml {
+  font-size: 13px;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+/*LINE*/
+.blocks_line {
+  width: 100%;
+  border-bottom: 1px solid #757575;
+  margin-top: 12px;
+  position: absolute;
+}
+/*FOOTER 2*/
+.footer_logo {
+  background: url("../img/Test_grey.png") no-repeat;
+  height: 40px;
+  background-position: left;
+}
+.rigts {
+  font-size: 12px;
+  line-height: 18px;
+  color: #a0a9b2;
+}
+/*SOCIAL*/
+.social div {
+  float: left;
+  margin-left: 10px;
+}
+i {
+  color: white;
+  padding: 15px 0;
+  width: 47px;
+  text-align: center;
+  border: 1px solid #7b8092;
+}
+i:hover {
+  color: #ffc925;
+  border: 1px solid #ffc925;
+}
+/**/
+.wezom_last {
+
+}
+.wezom_logo {
+  background: url("../img/wezom.png") no-repeat;
+  height: 40px;
+}
+.wezom_agency {
+  float: left;
+}
+.wezom_agency_grey {
+  font-size: 12px;
+  line-height: 28px;
+  color: #a0a9b2;
+}
+.wezom_agency_wh {
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
 }
