@@ -1,0 +1,79 @@
+// Up
+.ui-button
+	background: none
+	margin: 0
+	border: none
+	padding: 0
+	height: 40px
+	line-height: 40px
+	text-indent: 15px
+	border: 1px solid #43BD85
+	&:hover, 
+	&:focus
+		background: none
+		outline: none
+		color: #000
+		border: 1px solid #43BD85
+		.ui-icon
+			background-image: none
+
+// Arrow
+.ui-selectmenu-icon.ui-icon
+	width: 0
+	height: 0
+	background-image: none
+	border-top: 10px solid #37465F
+	border-left: 8px solid transparent
+	border-right: 8px solid transparent
+	position: relative
+	top: 50%
+	transform: translateY(-50%)
+	right: 15px
+	&:hover
+		background-image: none
+
+//ACTIVE arrow
+.ui-selectmenu-button-open
+	.ui-selectmenu-icon.ui-icon
+		border: none
+		border-bottom: 10px solid #37465F
+		border-left: 8px solid transparent
+		border-right: 8px solid transparent
+
+// Dropdown
+.ui-widget.ui-widget-content
+	border: 1px solid #43BD85
+	padding: 0
+
+// Dropdown  item
+.ui-menu .ui-menu-item
+	> div
+		padding: 0
+	background: none
+	margin: 0
+	border: none
+	padding: 0
+	height: 40px
+	line-height: 40px
+	text-indent: 10px
+
+// Dropdown item hover
+.ui-widget-content .ui-state-active
+	background-color: #37465F
+	border: none
+	margin: 0
+  
+JS Placeholder
+$.widget( 'app.selectmenu', $.ui.selectmenu, {
+  _drawButton: function() {
+    this._super();
+    var selected = this.element
+    .find( '[selected]' )
+    .length,
+        placeholder = this.options.placeholder;
+
+    if (!selected && placeholder) {
+      this.buttonItem.text(placeholder);
+    }
+  }
+});
