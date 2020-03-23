@@ -387,24 +387,23 @@ a {
 }
 
 /*SELECTS*/
-.selects {
-  line-height: 44px;
-  font-size: 14px;
+.grey_form {
   color: #696969;
-  background: white;
-  text-align: center;
-  height: 44px;
-  width: 100px;
-  margin-top: 23px;
 }
 
-.selects  {
-  float: left;
-  line-height: 38px;
-  color: #696969;
+.selects1 {
+  line-height: 42px;
   background: white;
-  margin: 0 10px;
+  text-align: center;
+  width: 23%;
+  margin-top: 23px;
+  margin-right: 20px;
+  padding: 10px;
 }
+.selects1:last-child {
+  margin-right: 0;
+}
+
 
 /*Заглавная*/
 .goods {
@@ -415,7 +414,10 @@ a {
   font-size: 36px;
   line-height: 40px;
   color: #3b3b3b;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #ff8500;
 }
+
 .go {
   float: right;
 }
@@ -450,7 +452,7 @@ a {
   text-align: center;
 }
 .description {
-  font-size: 17px;
+  font-size: 16px;
   text-decoration: underline;
   line-height: 26px;
   color: #3b3b3b;
@@ -467,6 +469,7 @@ a {
   height: 15px;
   width: 95px;
   background: url("../img/rate.png") no-repeat;
+  margin-top: 3px;
 }
 .rate_02 {
   float: left;
@@ -474,6 +477,7 @@ a {
   width: 95px;
   background: url("../img/rate.png") no-repeat;
   background-position: 0px -23px;
+  margin-top: 3px;
 }
 .rate_03 {
   float: left;
@@ -481,6 +485,7 @@ a {
   width: 95px;
   background: url("../img/rate.png") no-repeat;
   background-position: 0px -53px;
+  margin-top: 3px;
 }
 .status_text {
   float: left;
@@ -523,6 +528,7 @@ a {
 .summer_text   {
   display: block;
   padding-top: 5px;
+
 }
 .usual {
   background: url("../img/car.png") no-repeat;
@@ -574,6 +580,8 @@ a {
   height: 26px;
   width: 74px;
   margin-left: 34px;
+  filter: drop-shadow(0 4px 4px rgba(4,182,142,0.5));
+  letter-spacing: .1em;
 }
 
 .hit {
@@ -582,17 +590,22 @@ a {
   height: 26px;
   width: 74px;
   margin: 0 10px;
+  filter: drop-shadow(0 4px 4px rgba(98,28,148,0.5));
+  letter-spacing: .1em;
 }
 .sale {
   float: left;
   background: url("../img/sale.png") no-repeat;
   height: 26px;
   width: 74px;
+  filter: drop-shadow(0 4px 4px rgba(189,17,41,0.5));
+  letter-spacing: .1em;
 }
 
 /*ЦЕНЫ*/
 .price {
   margin-top: 20px;
+  padding-bottom: 20px;
   color: #3b3b3b;
 }
 .price_full {
@@ -642,6 +655,7 @@ a {
   background: #fefcea;
   background: linear-gradient(to right, #ff8500, #ffae00);
   padding: 0 70px 0 70px;
+  margin-top: 15px;
 }
 .tobuy:hover {
   background: #fefcea; /* Для старых браузров */
@@ -651,42 +665,56 @@ a {
 .tobuy_icon {
     background: url("../img/basket_wh.png") no-repeat;
     background-position: 0 13px;
+    padding-left: 15px;
 }
 /*СРАВНЕНИЕ И ИЗБРАННОЕ*/
 .simile {
-  float: left;
-  position: relative;
   font-size: 14px;
   line-height: 26px;
   color: #3b3b3b;
   text-decoration: underline;
   text-align: center;
+  margin-top: 15px;
 }
 .simile01 {
   float: left;
+  background: url("../img/comparison01.png") no-repeat;
 }
 .tobuy_compare {
   float: left;
-  background: url("../img/comparison01.png") no-repeat;
-  background-position: left;
 }
 .tobuy_compare_text {
+  padding-left: 40px;
+  padding-right: 5px;
 }
-.tobuy_favorite {
-  float: right;
+
+
+.simile02 {
+  float: left;
   background: url("../img/favorite01.png") no-repeat;
-  background-position: left;
 }
+
+.tobuy_favorite {
+  float: left;
+  background-position: left;
+  margin-left: 33px;
+  background-size: 99%;
+}
+.tobuy_favorite_text {
+
+}
+
 /*--------------------FOOTER----------------------*/
 footer {
   padding-top: 37px;
   background: #696969;
   height: 340px;
+  font-weight: 600;
 }
 .blocks01 {
   float: left;
   color: #cbcbcb;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 36px;
 }
 .blocks_line01 {
@@ -715,6 +743,8 @@ footer {
   line-height: 50px;
   color: #9c9c9c;
   background: #fff;
+  padding-left: 30px;
+  padding-right: 154px;
 }
 .button_discrabe {
   float: left;
@@ -722,6 +752,8 @@ footer {
   line-height: 50px;
   color: #ffffff;
   background: #ff8900;
+  padding-left: 26px;
+  padding-right: 26px;
 }
 /*мелкие блоки*/
 .blocks02_bg {
@@ -741,17 +773,25 @@ footer {
   border-bottom: 1px solid #757575;
   margin-top: 12px;
   position: absolute;
+
 }
 /*FOOTER 2*/
+.footer02 {
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
 .footer_logo {
   background: url("../img/Test_grey.png") no-repeat;
   height: 40px;
   background-position: left;
+
 }
 .rigts {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 45px;
   color: #a0a9b2;
+  border-left: 1px solid #787878;
+  padding-left: 10px;
 }
 /*SOCIAL*/
 .social div {
