@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
@@ -126,11 +127,11 @@
 		<div class="col-9">
 						<div class="find">
 						<ul class="">
-						<li class=""><a href="#"><span class="car"></span>ССылка 1</a></li>
-						<li class=""><a href="#"><span class="big"></span>ССылка 2</a></li>
-						<li class=""><a href="#"><span class="shina"></span>ССылка 3</a></li>
-						<li class=""><a href="#"><span class="oil"></span>ССылка 4</a></li>
-						<li class=""><a href="#"><span class="battery"></span>ССылка 5</a></li>
+							<li class=""><a href="#" class=""><span class="car"></span>ССылка 1</a></li>
+							<li class=""><a href="#" class=""><span class="big"></span>ССылка 2</a></li>
+							<li class=""><a href="#"><span class="shina"></span>ССылка 3</a></li>
+							<li class=""><a href="#"><span class="oil"></span>ССылка 4</a></li>
+							<li class=""><a href="#"><span class="battery"></span>ССылка 5</a></li>
 					</ul>
 				 </div>
 </div>
@@ -140,8 +141,8 @@
 			<div class="col-3">
 			<div class="tab">
 				<ul>
-					<li><a href="#">Tab 1</a></li>
-					<li><a href="#">Tab 2</a></li>
+					<li class="tab_button"><a href="#">Tab 1</a></li>
+					<li class="tab_button"><a href="#">Tab 2</a></li>
 				</ul>
 			</div>
 			</div>
@@ -425,6 +426,7 @@
 	<div class="blocks">
 		<div class="col-5">
 			<div class="blocks01 blocks_line01">Блок 1</div>
+			<div class="clearfix"></div>
 			<div class="course">Будьте в курсе новостей и новинок!</div>
 			<div class="subscription">Подписывайтесь на рассылку</div>
 			<div class="blocks01 blocks_line01">
@@ -432,19 +434,73 @@
 				<div class="button_discrabe">подписаться</div>
 			</div>
 		</div>
-<!--
+
 		<div class="col-2">
-			<div class="blocks02 blocks_line02">Блок ссылок 1</div>
-		</div>
-		<div class="col-2">
-			<div class="blocks03 blocks_line03">Блок ссылок 2</div>
+			<div class="blocks02_bg blocks_line01">Блок ссылок 1</div>
+			<div class="clearfix"></div>
+			<div class="blocks02_sml">Ссылка 1</div>
+			<div class="blocks02_sml">Ссылка 2</div>
+			<div class="blocks02_sml">Ссылка 3</div>
+			<div class="blocks02_sml">Ссылка 4</div>
 		</div>
 
 		<div class="col-2">
-			<div class="blocks04 blocks_line04">Блок ссылок 3</div>
+			<div class="blocks02_bg blocks_line01">Блок ссылок 1</div>
+			<div class="clearfix"></div>
+			<div class="blocks02_sml">Ссылка 1</div>
+			<div class="blocks02_sml">Ссылка 2</div>
+			<div class="blocks02_sml">Ссылка 3</div>
+			<div class="blocks02_sml">Ссылка 4</div>
 		</div>
--->
+
+		<div class="col-2">
+			<div class="blocks02_bg blocks_line01">Блок ссылок 1</div>
+			<div class="clearfix"></div>
+			<div class="blocks02_sml">Ссылка 1</div>
+			<div class="blocks02_sml">Ссылка 2</div>
+			<div class="blocks02_sml">Ссылка 3</div>
+			<div class="blocks02_sml">Ссылка 4</div>
+		</div>
 	</div>
+	<div class="clearfix"></div>
+
+<!--line-->
+<div class="container">
+<div class="col-2">
+	<div class="blocks_line"></div>
+</div>
+</div>
+<div class="clearfix"></div>
+<!--footer-->
+<div class="footer02">
+	<div class="col-2">
+		<div class="footer_logo"></div>
+	</div>
+
+	<div class="col-4">
+		<div class="rigts">© Copyrith 2017. Тестовое задание Wezom</div>
+	</div>
+<!--SOCIAL-->
+	<div class="col-4">
+		<div class="social">
+			<div class="vk"><i class="fab fa-vk"></i></div>
+			<div class="fb"><i class="fab fa-facebook-f"></i></div>
+			<div class="tw"><i class="fab fa-twitter"></i></div>
+			<div class="yb"><i class="fab fa-youtube"></i></div>
+		</div>
+	</div>
+
+	<div class="col-2">
+		<div class="wezom_last">
+			<div class="wezom_logo"></div>
+			<div class="wezom_agency">
+				<div class="wezom_agency_grey">Разработка тестового</div>
+				<div class="wezom_agency_wh">Wezom Agency</div>
+			</div>
+		</div
+	</div>
+<div>
+
 </div>
 </footer>
 
@@ -452,6 +508,6 @@
 <script src="js/jquery.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
-<!--<script src="stylesheet" href="libs/jquery-ui/jquery-ui.min.js"></script>-->
+
 </body>
 </html>
