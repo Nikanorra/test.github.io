@@ -210,49 +210,6 @@ float: right;
 
 
 
-/*ПОПАП*/
-
-.popup_enter {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  display: none;
-  z-index: 5;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,.8);
-
-}
-.popup_enter_bg {
-  margin: auto;
-  width: 797px;
-  height: 481px;
-
-}
-.popup_enter_sml {
-  width: 757px;
-  height: 432px;
-  background: #ffffff;
-  padding-left: 45px;
-  padding-right: 35px;
-}
-.close {
-float: right;
-  font-size: 40px;
-  color: #767779;
-  display: block;
-}
-.popup_enter h2, .popup_social h2 {
-  font-size: 24px;
-  line-height: 76px;
-  color: #3b3b3b;
-  font-weight: bold;
-}
-
-.popup_cab {
-  float: left;
-  border-right: 1px solid #dbdbdb;
-  padding-right: 45px;
-}
 
 /*forms*/
 .recall_me {
@@ -432,11 +389,12 @@ float: right;
   text-align: center;
 }
 /*menu*/
-.menu__list {
+.menu {
   font-size: 16px;
   color: black;
   font-weight: bold;
   margin-right: 20px;
+  position: relative;
 }
 .menu__list__white {
   background-color: #ff8c00;
@@ -446,26 +404,70 @@ float: right;
   text-indent: 1.5em;
 }
 
-.menu__list > span {
+.menu > span {
   float: left;
   width: 56px;
   height: 56px;
   background: url("../img/burger.png") no-repeat #db7200;
   background-position: center;
 }
-.menu__list__black {
+
+/*menu drop*/
+.menu__list {
+  position: relative;
   line-height: 55px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.menu_drop {
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 50%;
+  opacity: 0;
+  top: -200000em;
+  background: #f1f1f1;
+  text-indent: 1.4em;
+}
+
+.menu__list:hover .menu_drop {
+  opacity: 1;
+  top: 0;
 }
 /*FILTER*/
-.scan {
-  font-size: 14px;
-  line-height: 56px;
+.form {
+  width: 100%;
+
+}
+.form_input,
+.form_label {
+  font-size: 16px;
+}
+.form_group {
   position: relative;
 }
-.filter, .category {
+
+.form_label {
+  text-indent: 1.5em;
+  left: 0;
+  position: absolute;
+  top: 30%;
+  color: #929292;
+}
+
+.form_input {
+  width: 100%;
+  line-height: 56px;
+  background: #f5f5f5;
+  border: none;
+}
+
+
+.category {
   color: #929292;
   background: #f5f5f5;
   text-indent: 1.5em;
+  line-height: 56px;
 }
 
 /*---убрать голубую обводку---*/
@@ -557,7 +559,6 @@ float: right;
 .colorfull {
   background: #696969;
   padding: 25px 36px;
-  height: 500px;
 }
 .tab {
   line-height: 44px;
@@ -589,7 +590,9 @@ float: right;
 .grey_form {
   color: #696969;
 }
-
+.grey_form2 {
+  margin-left: 270px;
+}
 .selects1 {
   line-height: 42px;
   background: white;
@@ -603,6 +606,38 @@ float: right;
   margin-right: 0;
 }
 
+.selects1_text {
+  line-height: 35px;
+  font-size: 14px;
+  color: #9c9c9c;
+}
+
+.selects1_text2 {
+  color: white;
+  line-height: 42px;
+  font-size: 14px;
+  margin-right: 30px;
+}
+/* buttom*/
+.reset button {
+  width: 23%;
+  line-height: 50px;
+  color: white;
+  border: none;
+  margin-top: 24px;
+}
+.btn_clear {
+ background: #ff4800;
+}
+.btn_clear span {
+ font-size: 25px;
+}
+.btn_filter {
+  float: right;
+background: linear-gradient(to right, #ff8500, #ffae00);
+text-transform: uppercase;
+font-weight: bold;
+}
 
 /*Заглавная*/
 .goods {
@@ -638,6 +673,7 @@ float: right;
   padding: 20px;
   border: 1px solid #dbdbdb;
   border-left: none;
+  margin-bottom: 60px;
 }
 .products:last-child{
   border-right: none;
@@ -859,6 +895,7 @@ float: right;
 .tobuy:hover {
   background: #fefcea; /* Для старых браузров */
   background: linear-gradient(to right, #d46f00, #e59100);
+  cursor: pointer;
 
 }
 .tobuy_icon {
@@ -878,19 +915,25 @@ float: right;
 .simile01 {
   float: left;
   background: url("../img/comparison01.png") no-repeat;
+  line-height: 36px;
 }
 .tobuy_compare {
   float: left;
 }
-.tobuy_compare_text {
-  padding-left: 40px;
-  padding-right: 5px;
+.tobuy_compare_text, .tobuy_favorite_text {
+  padding-left: 35px;
+  padding-right: 15px;
+  text-decoration: underline;
 }
-
+.tobuy_compare_text:hover, .tobuy_favorite_text:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .simile02 {
   float: left;
   background: url("../img/favorite01.png") no-repeat;
+  line-height: 36px;
 }
 
 .tobuy_favorite {
@@ -1010,14 +1053,15 @@ footer {
 }
 /**/
 .wezom_last {
-
+  float: left;
+  width: 100%;
 }
 .wezom_logo {
   background: url("../img/wezom.png") no-repeat;
   height: 40px;
 }
 .wezom_agency {
-  float: left;
+float: left;
 }
 .wezom_agency_grey {
   font-size: 12px;
@@ -1028,4 +1072,7 @@ footer {
   font-size: 14px;
   line-height: 30px;
   color: #ffffff;
+}
+footer {
+  padding-bottom: 20px;
 }
