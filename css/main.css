@@ -100,35 +100,55 @@ a {
 /*ПОПАП*/
 
 .popup_enter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
   display: none;
-  width: 801px;
-  height: 477px;
-  margin: auto;
-}
+  z-index: 5;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,.8);
 
+}
+.popup_enter_bg {
+  margin: auto;
+  width: 797px;
+  height: 481px;
+
+}
 .popup_enter_sml {
-width: 757px;
-height: 432px;
-background: #ffffff;
-margin-top: 45px;
+  width: 757px;
+  height: 432px;
+  background: #ffffff;
+  padding-left: 45px;
+  padding-right: 35px;
 }
 .close {
-  float: right;
-  font-size: 30px;
+float: right;
+  font-size: 40px;
   color: #767779;
   display: block;
 }
-.popup_enter h2 {
+.popup_enter h2, .popup_social h2 {
   font-size: 24px;
-  line-height: 40px;
+  line-height: 76px;
   color: #3b3b3b;
+  font-weight: bold;
 }
 
 .popup_cab {
   float: left;
+  border-right: 1px solid #dbdbdb;
+  padding-right: 45px;
 }
 
-
+/*forms*/
+.valid_text {
+  line-height: 40px;
+  text-indent: 1.5em;
+  font-size: 14px;
+  color: #9c9c9c;
+  margin: 15px 0 20px;
+}
 .popup_social {
   float: right;
 }
@@ -158,10 +178,127 @@ margin-top: 45px;
   background-color: #ea4335;
   color: white;
 }
+
+/*забыли пароль*/
+.registration_link a{
+  display: block;
+  float: left;
+  font-size: 14px;
+  color: #3d3d3d;
+  text-decoration: underline;
+  margin-top: 27px;
+}
+.registration_link a:last-child {
+  float: right;
+}
+.registration_button {
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0 26px 0 26px;
+  background: #afb9c6;
+  text-align: center;
+  margin-top: 27px;
+}
  /*ЗАЛИВКА меню*/
 .head-line {
   background-color: #696969;
   height: 50px;
+}
+.registration_button a {
+  color: white;
+}
+
+
+
+/*ПОПАП*/
+
+.popup_enter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 5;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,.8);
+
+}
+.popup_enter_bg {
+  margin: auto;
+  width: 797px;
+  height: 481px;
+
+}
+.popup_enter_sml {
+  width: 757px;
+  height: 432px;
+  background: #ffffff;
+  padding-left: 45px;
+  padding-right: 35px;
+}
+.close {
+float: right;
+  font-size: 40px;
+  color: #767779;
+  display: block;
+}
+.popup_enter h2, .popup_social h2 {
+  font-size: 24px;
+  line-height: 76px;
+  color: #3b3b3b;
+  font-weight: bold;
+}
+
+.popup_cab {
+  float: left;
+  border-right: 1px solid #dbdbdb;
+  padding-right: 45px;
+}
+
+/*forms*/
+.recall_me {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 5;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,.8);
+}
+.recall_bg {
+  margin: auto;
+  width: 426px;
+  height: 326px;
+
+}
+.recall_sml {
+  width: 378px;
+  height: 283px;
+  background: #ffffff;
+  padding-left: 45px;
+  padding-right: 35px;
+}
+.recall_sml h2{
+  font-size: 24px;
+  line-height: 86px;
+  color: #3b3b3b;
+  font-weight: bold;
+}
+.recall_button {
+  font-size: 14px;
+  line-height: 50px;
+  padding: 0 26px 0 26px;
+  background: #ff8900;
+  text-align: center;
+  margin-top: 20px;
+}
+.recall_button a {
+  color: white;
+  display: block;
+}
+.valid_number {
+  font-size: 14px;
+  color: #3b3b3b;
+  line-height: 40px;
 }
 
 /*ПОЗИЦИОНИРОВАНИЕ меню*/
@@ -253,7 +390,7 @@ margin-top: 45px;
   background: url("../img/phone.png") no-repeat #ff8900;
   background-position: 15% 50%;
 }
-.recall span {
+.recall a {
   display: block;
   font-size: 12px;
   line-height: 20px;
@@ -261,6 +398,8 @@ margin-top: 45px;
   text-align: center;
   padding: 20px 30px 20px 45px;
 }
+
+/*recall*/
 
 /*--navigation--*/
 .navigation>div {

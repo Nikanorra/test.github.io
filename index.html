@@ -12,33 +12,26 @@
 </head>
 
 <body>
-	<!--POPUP-->
-	<div class="container">
+	<!--POPUP reg-->
 	<section class="popup_enter" id="popup_enter">
+		<div class="popup_enter_bg">
 		<a href="#"class="close">&times;</a>
+		<div class="clearfix"></div>
 
 		<div class="popup_enter_sml">
 
 		<div class="popup_cab">
 
-			<h2>Вход в личный кабинет<h2>
-<!--
-				<form class="scan">
-							<input type="text" placeholder="" class="valid_email">
-							<label for="" class="filter_lab">Ваш email</label>
-
-							<input type="text" placeholder="" class="valid__pass">
-							<label for="" class="filter_lab">Пароль</label>
--->
+			<h2>Вход в личный кабинет</h2>
 
 				<form name="valid_email" method="post" action="">
-					<p>Ваш email
-						<input type="text" placeholder="mikel_ivanov98@gmail.com" size="">
+					<p>Ваш email</p>
+						<p><input type="text" class="valid_text" placeholder="mikel_ivanov98@gmail.com" size="37">
 					</p>
 
 				<form name="valid__pass" method="post" action="">
-					<p>Пароль
-						<input type="text" placeholder="*************" size="">
+					<p>Пароль</p>
+						<p><input type="text" class="valid_text" placeholder="*************" size="37">
 					</p>
 
 
@@ -48,6 +41,10 @@
 					<a href="#">Забыли пароль?</a>
 					<a href="#">Регистрация</a>
 			  </div>
+	<div class="clearfix"></div>
+				<div class="registration_button">
+					<a href="#">Войти в личный кабинет</a>
+				</div>
 
 			</div>
 
@@ -55,7 +52,7 @@
 
 		<div class="popup_social">
 
-			<h2>Войти с помощью<h2>
+			<h2>Войти с помощью</h2>
 
 				<div class="registration_social">
 					<div class="registration_fb">
@@ -73,9 +70,34 @@
 				</div>
 
 		</div>
-	</div>
-	</section>
-	</div>
+		</div>
+
+</section>
+
+<!--popup recall-->
+<div class="recall_me" id="recallMy">
+	<div class="recall_bg">
+	<a href="#"class="close">&times;</a>
+	<div class="clearfix"></div>
+
+	<div class="recall_sml">
+
+
+	<h2 class="">Перезвоните мне</h2>
+
+	<form name="valid_number" method="post" action="">
+		<p>Номер телефона</p>
+			<p><input type="text" class="valid_text" placeholder="+38(0__) ___ - __ - __" size="37">
+		</p>
+
+	<div class="clearfix"></div>
+		<div class="recall_button">
+			<a href="#">Перезвоните мне</a>
+		</div>
+
+</div></div></div>
+
+
 
 <header class = "head-line">
 	<div class="container">
@@ -122,9 +144,10 @@
 <div class="contact">
 	<div class="tel">+380 98 170 00 740</div>
 	<div class="tel">+380 98 170 00 740</div>
-	<div class="recall"><span>Перезвонить мне</span></div>
+	<div class="recall"> <a href="#"id="recallBtn">Перезвонить мне</a></div>
 </div>
 </div>
+
 
 <!--navigation-->
 <div class="col-4">
@@ -146,7 +169,7 @@
 <div class="container">
 		<div class="col-3">
 			<!--menu-->
-			<ul class="menu__list">
+			<ul class="menu__list"><span></span>
 		    <li class="menu__list__white">Меню</li>
 		    <li class="menu__list__black">ССылка 1</li>
 		    <li class="menu__list__black">ССылка 2</li>
