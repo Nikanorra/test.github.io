@@ -98,12 +98,12 @@ a {
 }
 
 /*ПОПАП*/
+
 .popup_enter {
   display: none;
-}
-.popup_enter {
   width: 801px;
   height: 477px;
+  margin: auto;
 }
 
 .popup_enter_sml {
