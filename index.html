@@ -12,29 +12,93 @@
 </head>
 
 <body>
+	<!--POPUP-->
+	<div class="container">
+	<section class="popup_enter" id="popup_enter">
+		<a href="#"class="close">&times;</a>
+
+		<div class="popup_enter_sml">
+
+		<div class="popup_cab">
+
+			<h2>Вход в личный кабинет<h2>
+<!--
+				<form class="scan">
+							<input type="text" placeholder="" class="valid_email">
+							<label for="" class="filter_lab">Ваш email</label>
+
+							<input type="text" placeholder="" class="valid__pass">
+							<label for="" class="filter_lab">Пароль</label>
+-->
+
+				<form name="valid_email" method="post" action="">
+					<p>Ваш email
+						<input type="text" placeholder="mikel_ivanov98@gmail.com" size="">
+					</p>
+
+				<form name="valid__pass" method="post" action="">
+					<p>Пароль
+						<input type="text" placeholder="*************" size="">
+					</p>
+
+
+				<input type="radio" name="remember" value="">Запомнить меня
+
+				<div class="registration_link">
+					<a href="#">Забыли пароль?</a>
+					<a href="#">Регистрация</a>
+			  </div>
+
+			</div>
+
+
+
+		<div class="popup_social">
+
+			<h2>Войти с помощью<h2>
+
+				<div class="registration_social">
+					<div class="registration_fb">
+						<a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+					</div>
+
+					<div class="registration_tw">
+						<a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+					</div>
+
+					<div class="registration_gl">
+						<a href="#"><i class="fab fa-google"></i>Google</a>
+					</div>
+
+				</div>
+
+		</div>
+	</div>
+	</section>
+	</div>
 
 <header class = "head-line">
-<div class="container">
-<div class="col-5">
-<nav class = "wrapper">
-	<ul class="about">
-		<li class="about__items"><a href="#">Главная</a></li>
-		<li class="about__items"><a href="#">О компании</a></li>
-		<li class="about__items"><a href ="#">Ссылка 1</a></li>
-		<li class="about__items"><a href ="#">Ссылка 2</a></li>
-		<li class="about__items"><a href ="#">Ссылка 3</a></li>
-	</ul>
-</nav>
-</div>
+	<div class="container">
+					<div class="col-5">
+					<nav class = "wrapper">
+						<ul class="about">
+							<li class="about__items"><a href="#">Главная</a></li>
+							<li class="about__items"><a href="#">О компании</a></li>
+							<li class="about__items"><a href ="#">Ссылка 1</a></li>
+							<li class="about__items"><a href ="#">Ссылка 2</a></li>
+							<li class="about__items"><a href ="#">Ссылка 3</a></li>
+						</ul>
+					</nav>
+					</div>
 
-<div class="enter">
-	<div class="col-12">
-	<div class="enter__pic">
-	<a href = "#">вход</a>
+					<div class="enter">
+						<div class="col-12">
+						<div class="enter__pic">
+						<a href = "#" id="myBtn">вход</a>
+						</div>
+						</div>
+					</div>
 	</div>
-	</div>
-</div>
-</div>
 </header>
 
 <!-- header-->
@@ -83,7 +147,7 @@
 		<div class="col-3">
 			<!--menu-->
 			<ul class="menu__list">
-		    <span></span><li class="menu__list__white">Меню</li>
+		    <li class="menu__list__white">Меню</li>
 		    <li class="menu__list__black">ССылка 1</li>
 		    <li class="menu__list__black">ССылка 2</li>
 				<li class="menu__list__black">ССылка 3</li>
@@ -183,10 +247,6 @@
 	</div>
 </div>
 
-<div class="col-9">
-
-</div>
-</div>
 <div class="clearfix"></div>
 <!-------------Заглавная--------------------->
 
@@ -454,9 +514,10 @@
 
 </div>
 </div>
+</div>
 </section>
 <div class="clearfix"></div>
-<!----------FOOTER---------->
+<!---FOOTER---------->
 <footer>
 	<!--BLOCKS-->
 <div class="container">
@@ -499,45 +560,46 @@
 			<div class="blocks02_sml">Ссылка 4</div>
 		</div>
 	</div>
+	</div>
 	<div class="clearfix"></div>
 
 <!--line-->
-<div class="container">
-<div class="col-2">
-	<div class="blocks_line"></div>
-</div>
-</div>
+	<div class="container">
+		<div class="blocks_line"></div>
+
 <div class="clearfix"></div>
 <!--footer-->
 <div class="footer02">
-	<div class="col-2">
-		<div class="footer_logo"></div>
-	</div>
 
-	<div class="col-4">
-		<div class="rigts">© Copyrith 2017. Тестовое задание Wezom</div>
-	</div>
-<!--SOCIAL-->
-	<div class="col-3">
-		<div class="social">
-			<div class="vk"><i class="fab fa-vk"></i></div>
-			<div class="fb"><i class="fab fa-facebook-f"></i></div>
-			<div class="tw"><i class="fab fa-twitter"></i></div>
-			<div class="yb"><i class="fab fa-youtube"></i></div>
-		</div>
-	</div>
+					<div class="col-2">
+						<div class="footer_logo"></div>
+					</div>
 
-	<div class="col-3">
-		<div class="wezom_last">
-			<div class="wezom_logo"></div>
-			<div class="wezom_agency">
-				<div class="wezom_agency_grey">Разработка тестового</div>
-				<div class="wezom_agency_wh">Wezom Agency</div>
-			</div>
-		</div
-	</div>
-<div>
+					<div class="col-4">
+						<div class="rigts">© Copyrith 2017. Тестовое задание Wezom</div>
+					</div>
 
+					<!--SOCIAL-->
+						<div class="col-4">
+							<div class="social">
+								<div class="vk"><i class="fab fa-vk"></i></div>
+								<div class="fb"><i class="fab fa-facebook-f"></i></div>
+								<div class="tw"><i class="fab fa-twitter"></i></div>
+								<div class="yb"><i class="fab fa-youtube"></i></div>
+							</div>
+						</div>
+
+						<div class="col-2">
+							<div class="wezom_last">
+								<div class="wezom_logo"></div>
+								<div class="wezom_agency">
+									<div class="wezom_agency_grey">Разработка тестового</div>
+									<div class="wezom_agency_wh">Wezom Agency</div>
+								</div>
+							</div>
+						</div>
+
+</div>
 </div>
 </footer>
 
