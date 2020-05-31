@@ -1,87 +1,218 @@
-/* 1601 - 1920 px */
-@media screen and (max-width: 1920px) {
+/* Медиа-запросы */
+.wrapper [type="checkbox"] {
+  display: none;
+}
+.wrapper_mob {
+color: #c3c3c3;
+padding: 0 37px 0 10px;
+line-height: 50px;
+display: none;
+cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  body {
+    min-width: 576px;
+    max-width: 900px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .wrapper {
+    float: left;
+  }
+  .about__items {
+    float: none;
+    text-align: left;
+    padding: 0 37px 0 10px;
+  }
+
+  .wrapper ul {
+    display: none;
+  }
+  .wrapper_mob {
+    display: block;
+  }
+  input.wrapper_mob:checked + label.wrapper_mob {
+    background:  #ff8900;
+    color: white;
+  }
+  input.wrapper_mob:checked ~ ul {
+    display: block;
+  }
+/*end of header*/
+
+
+/*--contacts--*/
+  .contact>div {
+    float: left;
+    font-size: 11px;
+    line-height: 20px
+  }
+  .recall {
+    width: 50px;
+    line-height: 20px;
+  }
+  .recall a {
+    font-size: 10px;
+    padding: 20px 10px 20px 30px;
+  }
+    .comparison {
+      width: 31%;
+    }
+    .favorite {
+      width: 33%;
+    }
+    .basket {
+      width: 31%;
+    }
+    .navigation>div {
+        font-size: 7px;
+    }
+    .col-8 {
+      width: 54%;
+    }
+    .col-2-4 {
+      width: 23%;
+    }
+  /*меню*/
+  .menu__list {
+    display: none;
+  }
+  .category {
+    text-indent: none;
+  }
+  .find {
+    padding-top: 70px;
+  }
+  .grey_form>select {
+    width: 22%;
+  }
+.col-9 {
+    float: none;
+    width: 100%;
+  }
+  .col-3-1 {
+    width: 50%;
+  }
+  .products {
+    margin-bottom: 0;
+  }
+  .col-6-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 33%;
+  }
+  .email {
+	  width: 80%;
+  }
+  .button_discrabe {
+	 width: 20%;
+  }
+   .col-2-2 {
+	  width: 100%;
+  }
+  .wezom_last {
+	  padding-top: 20px;
+  }
+	.wezom_logo {
+		width: 6%;
+}
+.wezom_agency_grey {
+		font-size: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+}
+	.wezom_agency_wh {
+		font-size: 13px;
+		padding-left: 15px;
+		padding-right: 15px;
+}
 
 }
 
-/* 1369 - 1600 px */
-@media screen and (max-width: 1600px) {
-
+/* phone */
+@media screen and (max-width: 450px) {
+  body {
+    min-width: 320px;
+    max-width: 450px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .col-12,
+  .col-11,
+  .col-10,
+  .col-9,
+  .col-9-1,
+  .col-7,
+  .col-6,
+  .col-6-1,
+  .col-4,
+  .col-3,
+  .col-3-1,
+  .col-2,
+  .col-2-1,
+  .col-1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+.logo {
+  padding: 5px 0 5px 0;
 }
 
-/* 961 - 1368 px */
-@media screen and (max-width: 1368px) {
-    .awersome_numbers li {
-		width: 23%;
-	}
+.find {
+  margin-top: 20px;
+}
+.find a {
+  font-size: 11px;
+  line-height: 20px;
+  color: #a9aeb3;
+  width: 20%;
+  text-align: center;
+}
+.menu {
+  margin-right: 0;
+}
+.colorfull {
+    padding: 15px 16px;
+}
+.tab {
+  margin: 0 auto;
+}
+.grey_form>select {
+  width: 19%;
+}
+.grey_form2 {
+    margin: 0 auto;
+}
+.reset button {
 
+  font-size: 11px;
+}
+.go {
+    float: none;
+}
+.email {
+  float: left;
+  font-size: 12px;
+  width: 65%;
+}
+.button_discrabe {
+  float: left;
+  width: 35%;
+  text-align: center;
+}
+  .wezom_last {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+  }
+	.wezom_logo {
+		width: 15%;
 }
 
-/* 769 - 960 px */
-@media screen and (max-width: 960px) {
-    .next {
-        display: none;
-    }
-    .credits {
-        flex-direction: column;
-    }
-    .credits > * {
-        margin-bottom: 40px;
-    }
+	.wezom_agency_grey {
+		font-size: 9px;
+
+}
+	.wezom_agency_wh {
+		font-size: 11px;
 }
 
-/* 481 - 768 px */
-@media screen and (max-width: 768px) {
-    .offer__bg {
-        font-size: 100px;
-        position: relative;
-    }
-    .header {
-        height: auto;
-        padding-top: 50px;
-    }
-    .header .container {
-        height: auto;
-        padding-bottom: 150px;
-    }
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-    nav .logo {
-        position: relative;
-        top: auto;
-        left: auto;
-    }
-    .hamburger {
-        position: relative;
-        top: auto;
-        right: auto;
-        float: none;
-        margin-top: 14px;
-    }
-    .offer {
-        position: relative;
-        left: auto;
-        top: auto;
-        padding-top: 300px;
-    }
-    .offer__title {
-        font-size: 35px;
-        width: auto;
-        margin-left: auto;
-    }
-    .offer__text {
-        margin-left: 0;
-        width: auto;
-    }
-    .offer__btn {
-        margin-left: 0;
-    }
-}
-
-/* 320 - 480 px */
-@media screen and (max-width: 480px) {
-    .section-title__title {
-        font-size: 60px;
-    }
 }

@@ -15,7 +15,6 @@
 	margin-bottom: 20px;
 }
 
-
 .col-12 {
 	float: left;
 	width: 100%;
@@ -23,55 +22,76 @@
 
 .col-11 {
 	float: left;
-	width: 91.666674%;
+	width: calc(100%/1.09090900364);
 }
 
 .col-10 {
 	float: left;
-	width: 83.33333333%;
+	width: calc(100%/1.20000000005);
 }
 
 .col-9 {
 	float: left;
-	width: 75%;
+	width: calc(100%/1.33333333333);
+}
+.col-9-1 {
+	float: left;
+	width: calc(100%/1.33333333333);
 }
 
 .col-8 {
 	float: left;
-	width: 66.666666%;
+	width: calc(100%/1.500000015);
 }
 
 .col-7 {
 	float: left;
-	width: 58.3333333%;
+	width: calc(100%/1.71428571527);
 }
 
 .col-6 {
 	float: left;
-	width: 50%;
+	width: calc(100%/2);
 }
-
+.col-6-1 {
+	float: left;
+	width: calc(100%/2);
+}
 .col-5 {
 	float: left;
-	width: 41.666666%;
+	width: calc(100%/2.4000000384);
 }
 
 .col-4 {
 	float: left;
-	width: 33.33333333%;
+	width: calc(100%/3);
 }
 
 .col-3 {
 	float: left;
-	width: 25%;
+	width: calc(100%/4);
 }
-
+.col-3-1 {
+	float: left;
+	width: calc(100%/4);
+}
 .col-2 {
 	float: left;
-	width: 16.6666666%;
+	width: calc(100%/6.000000024);
 }
-
+.col-2-1 {
+	float: left;
+	width: calc(100%/6.000000024);
+}
+.col-2-2 {
+	float: left;
+	width: calc(100%/6.000000024);
+}
+.col-2-4 {
+	float: left;
+	width: calc(100%/6.000000024);
+}
 .col-1 {
 	float: left;
-	width: 8.33333333%;
+	width: calc(100%/12);
 }
