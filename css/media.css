@@ -44,15 +44,14 @@ cursor: pointer;
   .contact>div {
     float: left;
     font-size: 11px;
-    line-height: 20px
+    margin-bottom: 15px;
   }
   .recall {
     width: 50px;
-    line-height: 20px;
   }
   .recall a {
     font-size: 10px;
-    padding: 20px 10px 20px 30px;
+    padding: 0 10px 0 30px;
   }
     .comparison {
       width: 31%;
@@ -79,11 +78,21 @@ cursor: pointer;
   .category {
     text-indent: none;
   }
+  .find a {
+    font-size: 8px;
+  }
   .find {
     padding-top: 70px;
   }
   .grey_form>select {
     width: 22%;
+  }
+  .form_input,
+  .form_label {
+    font-size: 16px;
+  }
+  .form_input {
+    font-size: 5px;
   }
 .col-9 {
     float: none;
@@ -141,7 +150,6 @@ cursor: pointer;
   .col-10,
   .col-9,
   .col-9-1,
-  .col-7,
   .col-6,
   .col-6-1,
   .col-4,
@@ -156,7 +164,10 @@ cursor: pointer;
 .logo {
   padding: 5px 0 5px 0;
 }
-
+.recall a {
+  font-size: 9px;
+  padding: 0 5px 0 15px;
+}
 .find {
   margin-top: 20px;
 }

@@ -67,7 +67,9 @@ table {
   *zoom: 1;
 }
 
-
+input[type="text" i] {
+    padding: 0;
+}
 
 body, p, h3 {
 	padding: 0;
@@ -260,6 +262,7 @@ float: right;
   font-size: 12px;
   line-height: 50px;
   color: #c3c3c3;
+  border-bottom: 2px solid transparent;
 }
 
 .about__items {
@@ -267,26 +270,29 @@ float: right;
   text-align: center;
   padding: 0 37px 0 0;
 }
-
+.about__items a {
+  display: block;
+}
 .about__items a:hover {
   color: #fff;
+  border-bottom: 2px solid #ffc925;
 }
 
-.enter {
+.enter a {
+  display: block;
   background:  #ff8900;
   padding: 0 33px 0 33px;
   float: right;
   font-size: 12px;
   line-height: 50px;
-}
-.enter a {
   color: white;
   text-transform: uppercase;
 }
-.enter__pic {
-  background: url("../img/person.png") no-repeat;
-  background-position: left;
-  padding-left: 25px;
+.enter span {
+  padding-left: 10px;
+}
+.enter:hover {
+  cursor: pointer;
 }
 
 /*count*/
@@ -297,7 +303,8 @@ float: right;
   width: 114px;
   text-align: center;
   background-position: top;
-  margin-top: 10px;
+  display: block;
+  margin-bottom: 5px;
 }
 .message__link {
   font-size: 11px;
@@ -310,9 +317,8 @@ float: right;
 
 /* header contacts*/
 .head_contact {
-  margin-top: 0;
+  margin-top: 10px;
 }
-
 /*СКРЫТИЕ БРЕНДА*/
 .hid {
  font-size: 0;
@@ -321,21 +327,20 @@ float: right;
 }
 /*ПОЗИЦИОНИРОВАНИЕ логотипа*/
 .logo {
-	float: left;
   padding: 5px 0 40px 0;
 }
 /*--contacts--*/
 .contact>div {
   float: left;
   width: 33.3333333%;
+  line-height: 49px;
 }
 .tel {
   font-size: 16px;
-  line-height: 20px;
   font-style: italic;
   font-weight: bold;
   background-color: #f5f5f5;
-  padding: 20px 0 20px 12px;
+  padding: 0 0 0 12px;
 }
 .recall {
   background: url("../img/phone.png") no-repeat #ff8900;
@@ -344,10 +349,10 @@ float: right;
 .recall a {
   display: block;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 49px;
   color: white;
   text-align: center;
-  padding: 20px 30px 20px 45px;
+  padding: 0 30px 0 45px;
 }
 
 
@@ -372,7 +377,7 @@ float: right;
   border-right: 1px solid #e4e4e4;
 }
 .basket {
-  background: url("../img/basket.png") no-repeat;
+  background: url("../img/basket.png") no-repeat, url("../img/count.png") no-repeat;
   background-position: top;
   width: 32%;
 }
@@ -381,7 +386,6 @@ float: right;
   margin-top: 40px;
   text-align: center;
 }
-
 /*menu*/
 .menu {
   font-size: 16px;
@@ -459,7 +463,6 @@ float: right;
 .category {
   color: #929292;
   background: #f5f5f5;
-  text-indent: 1.5em;
   line-height: 56px;
 }
 
@@ -475,7 +478,8 @@ float: right;
   z-index: -1;
 }
 
-.search {
+.search a {
+  display: block;
   background: #ff8900;
   font-size: 16px;
   line-height: 56px;
@@ -487,58 +491,96 @@ float: right;
   border: none;
   padding: 0;
 }
-
+.search a:hover {
+  background: #db7200;
+  cursor: pointer;
+}
 /*GREY top*/
 .find {
   margin-top: 20px;
 }
 .find a {
+  display: block;
   float: left;
   background: #606a76;
   font-size: 18px;
   line-height: 74px;
   color: #a9aeb3;
-  width: 20%;
+  width: 15%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   text-align: center;
+  border-bottom: solid 2px transparent;
 }
-
-.find span {
-  display: inline-block;
-}
-
 .car {
-  background: url("../img/filter_all.png") no-repeat #606a76;
-  width: 55px;
-  height: 20px;
-  background-position: 0% 93%;
+  display: block;
+  background: url("../img/filter_full.png")  no-repeat;
+  background-position: -3% 130%;
+  border-bottom: solid 2px transparent;
 }
-
+.car > span {
+  margin-left: 70px;
+}
+.car:hover {
+  background-position: -3% -18%;
+  color: #ffc925;
+  border-bottom: solid 2px #ffc925;
+}
 .big {
-  background: url("../img/filter_all.png") no-repeat;
-  width: 55px;
-  height: 30px;
-  background-position: 35% 91%;
+  display: block;
+  background: url("../img/filter_full.png") no-repeat;
+  background-position: 22% 120%;
+  border-bottom: solid 2px transparent;
 }
-
+.big > span {
+  margin-left: 70px;
+}
+.big:hover {
+  background-position: 22% -27%;
+  color: #ffc925;
+  border-bottom: solid 2px #ffc925;
+}
 .shina {
-  background: url("../img/filter_all.png") no-repeat;
-  width: 39px;
-  height: 30px;
-  background-position: 63% 92%;
+  display: block;
+  background: url("../img/filter_full.png") no-repeat;
+  background-position: 48% 125%;
+  border-bottom: solid 2px transparent;
 }
-
+.shina > span {
+  margin-left: 60px;
+}
+.shina:hover {
+  background-position: 48% -23%;
+  color: #ffc925;
+  border-bottom: solid 2px #ffc925;
+}
 .oil {
-  background: url("../img/filter_all.png") no-repeat;
-  width: 40px;
-  height: 25px;
-  background-position: 80% 93%;
+  display: block;
+  background: url("../img/filter_full.png") no-repeat;
+  background-position: 76% 125%;
+  border-bottom: solid 2px transparent;
 }
-
+.oil > span {
+  margin-left: 65px;
+}
+.oil:hover {
+  background-position: 76% -23%;
+  color: #ffc925;
+  border-bottom: solid 2px #ffc925;
+}
 .battery {
-  background: url("../img/filter_all.png") no-repeat;
-  width: 40px;
-  height: 20px;
-  background-position: 100% 92%;
+  display: block;
+  background: url("../img/filter_full.png") no-repeat;
+  background-position: 117% 125%;
+  border-bottom: solid 2px transparent;
+}
+.battery > span {
+  margin-left: 25px;
+}
+.battery:hover {
+  background-position: 117% -23%;
+  color: #ffc925;
+  border-bottom: solid 2px #ffc925;
 }
 
 /*GREY site*/
@@ -554,6 +596,7 @@ float: right;
   text-align: center;
   width: 282px;
   height: 44px;
+  margin-top: 25px;
 }
 
 .tab_button01, .tab_button02 {
@@ -636,7 +679,6 @@ font-weight: bold;
   line-height: 40px;
   color: #3b3b3b;
   padding-bottom: 11px;
-  border-bottom: 1px solid #ff8500;
 }
 
 .go {
@@ -661,6 +703,9 @@ font-weight: bold;
   border: 1px solid #dbdbdb;
   border-left: none;
   margin-bottom: 60px;
+}
+.products:hover {
+  border-top: 1px solid #ff8500;
 }
 .products:last-child{
   border-right: none;
