@@ -66,11 +66,12 @@ cursor: pointer;
         font-size: 7px;
     }
     .col-8 {
-      width: 54%;
+      width: 34%;
     }
     .col-2-4 {
-      width: 23%;
+      width: 33%;
     }
+
   /*меню*/
   .menu__list {
     display: none;
@@ -89,7 +90,7 @@ cursor: pointer;
   }
   .form_input,
   .form_label {
-    font-size: 16px;
+    font-size: 12px;
   }
   .form_input {
     font-size: 5px;
@@ -172,11 +173,10 @@ cursor: pointer;
   margin-top: 20px;
 }
 .find a {
-  font-size: 11px;
-  line-height: 20px;
-  color: #a9aeb3;
-  width: 20%;
-  text-align: center;
+  font-size: 8px;
+}
+.car > span {
+  margin-left: 0;
 }
 .menu {
   margin-right: 0;
@@ -194,9 +194,9 @@ cursor: pointer;
     margin: 0 auto;
 }
 .reset button {
-
   font-size: 11px;
 }
+
 .go {
     float: none;
 }

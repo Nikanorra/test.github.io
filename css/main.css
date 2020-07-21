@@ -295,25 +295,6 @@ float: right;
   cursor: pointer;
 }
 
-/*count*/
-.message {
-  float: right;
-  background: url("../img/count.png") no-repeat;
-  filter: drop-shadow(0 2px 3px rgba(247,129,0,0.7));
-  width: 114px;
-  text-align: center;
-  background-position: top;
-  display: block;
-  margin-bottom: 5px;
-}
-.message__link {
-  font-size: 11px;
-  line-height: 18px;
-  display: block;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-}
 
 /* header contacts*/
 .head_contact {
@@ -377,10 +358,28 @@ float: right;
   border-right: 1px solid #e4e4e4;
 }
 .basket {
-  background: url("../img/basket.png") no-repeat, url("../img/count.png") no-repeat;
+  background: url("../img/basket.png") no-repeat;
   background-position: top;
+  position: relative;
   width: 32%;
 }
+/*count*/
+.message {
+  background: url("../img/count.png") no-repeat;
+  filter: drop-shadow(0 2px 3px rgba(247,129,0,0.7));
+  background-position: top;
+  margin-top: -11px;
+  left: 45%;
+}
+.message__link {
+  font-size: 11px;
+  line-height: 18px;
+  display: block;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+}
+
 .navigation__link {
   display: block;
   margin-top: 40px;
