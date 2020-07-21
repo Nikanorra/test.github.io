@@ -514,14 +514,14 @@ float: right;
 .car {
   display: block;
   background: url("../img/filter_full.png")  no-repeat;
-  background-position: -3% 130%;
+  background-position: -1% 130%;
   border-bottom: solid 2px transparent;
 }
 .car > span {
   margin-left: 70px;
 }
 .car:hover {
-  background-position: -3% -18%;
+  background-position: -1% -18%;
   color: #ffc925;
   border-bottom: solid 2px #ffc925;
 }
@@ -542,28 +542,28 @@ float: right;
 .shina {
   display: block;
   background: url("../img/filter_full.png") no-repeat;
-  background-position: 48% 125%;
+  background-position: 50% 125%;
   border-bottom: solid 2px transparent;
 }
 .shina > span {
   margin-left: 60px;
 }
 .shina:hover {
-  background-position: 48% -23%;
+  background-position: 50% -23%;
   color: #ffc925;
   border-bottom: solid 2px #ffc925;
 }
 .oil {
   display: block;
   background: url("../img/filter_full.png") no-repeat;
-  background-position: 76% 125%;
+  background-position: 79% 125%;
   border-bottom: solid 2px transparent;
 }
 .oil > span {
   margin-left: 65px;
 }
 .oil:hover {
-  background-position: 76% -23%;
+  background-position: 79% -23%;
   color: #ffc925;
   border-bottom: solid 2px #ffc925;
 }
@@ -574,7 +574,7 @@ float: right;
   border-bottom: solid 2px transparent;
 }
 .battery > span {
-  margin-left: 25px;
+  margin-left: 65px;
 }
 .battery:hover {
   background-position: 117% -23%;

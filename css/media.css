@@ -111,6 +111,28 @@ cursor: pointer;
   .col-2 {
     width: 33%;
   }
+  /*yellow icons tables*/
+  .shina {
+    background-position: 48% 125%;
+  }
+  .shina:hover {
+    background-position: 48% -23%;
+  }
+
+  .oil {
+    background-position: 74% 125%;
+  }
+  .oil:hover {
+    background-position: 74% -23%;
+  }
+
+  .battery {
+    background-position: 110% 125%;
+  }
+  .battery:hover {
+    background-position: 110% -23%;
+  }
+
   .email {
 	  width: 80%;
   }
@@ -173,7 +195,7 @@ cursor: pointer;
   margin-top: 20px;
 }
 .find a {
-  font-size: 8px;
+  line-height: 50px;
 }
 .car > span {
   margin-left: 0;
@@ -197,6 +219,55 @@ cursor: pointer;
   font-size: 11px;
 }
 
+/*yellow icons phone*/
+/*.find {
+  overflow: hidden;
+}*/
+
+.car {
+  /*background-position: 0% 156%;*/
+  background: none;
+}
+.car:hover {
+  background-position: 0% 8%;
+}
+
+.big {
+  background: none;
+}
+.big:hover {
+  background-position: 22% 55%;
+}
+.big > span {
+  margin-left: 0;
+}
+.shina {
+  background: none;
+}
+.shina:hover {
+  background-position: 48% -23%;
+}
+.shina > span {
+  margin-left: 0;
+}
+.oil {
+  background: none;
+}
+.oil:hover {
+  background-position: 74% -23%;
+}
+.oil > span {
+  margin-left: 0;
+}
+.battery {
+  background: none;
+}
+.battery:hover {
+  background-position: 110% -23%;
+}
+.battery > span {
+  margin-left: 0;
+}
 .go {
     float: none;
 }
