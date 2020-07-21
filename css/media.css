@@ -217,6 +217,7 @@ cursor: pointer;
 }
 .reset button {
   font-size: 11px;
+  width: 40%;
 }
 
 /*yellow icons phone*/
@@ -268,6 +269,8 @@ cursor: pointer;
 .battery > span {
   margin-left: 0;
 }
+
+
 .go {
     float: none;
 }
