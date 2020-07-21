@@ -91,6 +91,7 @@ cursor: pointer;
   .form_input,
   .form_label {
     font-size: 12px;
+
   }
   .form_input {
     font-size: 5px;
@@ -208,6 +209,7 @@ cursor: pointer;
 }
 .tab {
   margin: 0 auto;
+  margin-top: 25px;
 }
 .grey_form>select {
   width: 19%;

@@ -448,7 +448,7 @@ float: right;
   text-indent: 1.5em;
   left: 0;
   position: absolute;
-  top: 30%;
+  top: 40%;
   color: #929292;
 }
 
@@ -978,7 +978,6 @@ font-weight: bold;
 /*--------------------FOOTER----------------------*/
 footer {
   padding-top: 37px;
-
   background: #696969;
   font-weight: 600;
 }
