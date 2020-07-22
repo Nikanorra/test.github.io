@@ -61,7 +61,10 @@
 	float: left;
 	width: calc(100%/2.4000000384);
 }
-
+.col-5-1 {
+	float: left;
+	width: calc(100%/2.4000000384);
+}
 .col-4 {
 	float: left;
 	width: calc(100%/3);
