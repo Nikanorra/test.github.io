@@ -39,3 +39,29 @@ let popupCall = document.getElementById('recallMy'),
 				popupCall.style.display="none";
 			}
 }
+
+function validate() {
+	var userEmail = document.getElementById("userEmail");
+	var userPassword = document.getElementById("userPassword");
+	var userSubscribe = document.getElementById("userSubscribe");
+
+	event.preventDefault();
+
+	if(!userEmail.value) {
+		userEmail.style.border = "2px solid red";
+		return false;
+	}
+
+	if(!userPassword.value) {
+		userPassword.style.border = "2px solid red";
+		return false;
+	}
+
+	if(!userSubscribe.value) {
+		userSubscribe.style.border = "2px solid red";
+		return false;
+	}
+
+	return true;
+
+}

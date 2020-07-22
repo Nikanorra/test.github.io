@@ -29,13 +29,13 @@
 
 				<form name="valid_email" method="post" action="">
 					<p>Ваш email</p>
-						<p><input type="text" class="valid_text" placeholder="mikel_ivanov98@gmail.com" size="37">
+						<p><input type="text" class="valid_text" placeholder="mikel_ivanov98@gmail.com" size="37" id="userEmail">
 					</p>
 				</form>
 
 				<form name="valid__pass" method="post" action="">
 					<p>Пароль</p>
-						<p><input type="text" class="valid_text" placeholder="*************" size="37">
+						<p><input type="text" class="valid_text" placeholder="*************" size="37" id="userPassword">
 					</p>
 				</form>
 
@@ -46,9 +46,9 @@
 					<a href="#">Регистрация</a>
 			  </div>
 	<div class="clearfix"></div>
-				<div class="registration_button">
+				<button type="submit" class="registration_button">
 					<a href="#">Войти в личный кабинет</a>
-				</div>
+				</button>
 
 			</div>
 
@@ -691,8 +691,15 @@
 			<div class="clearfix"></div>
 			<div class="course">Будьте в курсе новостей и новинок!</div>
 			<div class="subscription">Подписывайтесь на рассылку</div>
-			<div class="email">Укажите свой email для подписки</div>
-			<div class="button_discrabe">подписаться</div>
+			<div class="email">
+				<form name="" method="post" action="">
+					<p>
+						<input type="text" class="" placeholder="Укажите свой email для подписки" id="userSubscribe">
+					</p>
+				</form>
+
+			</div>
+			<button class="button_discrabe" type="submit">подписаться</button>
 		</div>
 
 		<div class="col-2">
@@ -764,7 +771,7 @@
 <script src="js/jquery.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
-<script  src="js/index.js"></script>
+
 
 </body>
 </html>
