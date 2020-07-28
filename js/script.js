@@ -2,8 +2,6 @@ $ (document).ready(function() {
 
 	$('#category_selec').selectmenu();
 
-});
-
 let popup = document.getElementById('popup_enter'),
 		popupToggle = document.getElementById('myBtn'),
 		popupClose = document.querySelector('.close');
@@ -24,7 +22,7 @@ let popup = document.getElementById('popup_enter'),
 
 let popupCall = document.getElementById('recallMy'),
 		popupToggleCall = document.getElementById('recallBtn'),
-		popupCloseCall = document.querySelector('.close');
+		popupCloseCall = document.querySelector('.close1');
 
 		popupToggleCall.onclick = function() {
 			popupCall.style.display="block";
@@ -39,6 +37,11 @@ let popupCall = document.getElementById('recallMy'),
 				popupCall.style.display="none";
 			}
 }
+
+
+	$("#userPhone").mask("+3 (099) -99-999");
+
+
 
 function validate() {
 	var userEmail = document.getElementById("userEmail");
@@ -65,3 +68,5 @@ function validate() {
 	return true;
 
 }
+
+});

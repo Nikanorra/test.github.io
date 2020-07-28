@@ -130,6 +130,12 @@ float: right;
   color: #767779;
   display: block;
 }
+.close1 {
+float: right;
+  font-size: 40px;
+  color: #767779;
+  display: block;
+}
 .popup_enter h2, .popup_social h2 {
   font-size: 24px;
   line-height: 76px;
@@ -526,6 +532,12 @@ float: right;
   color: #ffc925;
   border-bottom: solid 2px #ffc925;
 }
+.car:checked {
+  background-position: -1% -18%;
+  color: #ffc925;
+  border-bottom: solid 2px #ffc925;
+}
+
 .big {
   display: block;
   background: url("../img/filter_full.png") no-repeat;

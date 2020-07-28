@@ -70,7 +70,7 @@
 					</div>
 
 				</div>
-
+	</div>
 		</div>
 		</div>
 
@@ -79,7 +79,7 @@
 <!--popup recall-->
 <div class="recall_me" id="recallMy">
 	<div class="recall_bg">
-	<a href="#"class="close">&times;</a>
+	<a href="#"class="close1">&times;</a>
 	<div class="clearfix"></div>
 
 	<div class="recall_sml">
@@ -89,7 +89,7 @@
 
 	<form name="valid_number" method="post" action="">
 		<p>Номер телефона</p>
-			<p><input type="text" class="valid_text" placeholder="+38(0__) ___ - __ - __" size="37">
+			<p><input type="text" class="valid_text" size="37" id="userPhone">
 		</p>
 	</form>
 
@@ -682,7 +682,7 @@
 	<!--BLOCKS-->
 <div class="container">
 
-		<div class="col-5-1">
+		<div class="col-6-1">
 			<div class="blocks01 blocks_line01">Блок 1</div>
 			<div class="clearfix"></div>
 			<div class="course">Будьте в курсе новостей и новинок!</div>
@@ -764,8 +764,9 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/jquery-ui.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
 <script src="js/script.js"></script>
-
+<script>$("#userPhone").mask("+3 (099) -99-999");</script>
 
 </body>
 </html>
