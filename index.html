@@ -27,17 +27,21 @@
 
 			<h2>Вход в личный кабинет</h2>
 
-				<form name="valid_email" method="post" action="">
+				<form name="valid_email" role="form" method="post" action="" id="userRegistration">
 					<p>Ваш email</p>
-						<p><input type="text" class="valid_text" placeholder="mikel_ivanov98@gmail.com" size="37" id="userEmail">
-					</p>
-				</form>
+						<p>
+							<label for="registrationEmail"></label>
+							<input type="email" class="valid_text validate[required]" placeholder="mikel_ivanov98@gmail.com" size="37" id="registrationEmail" name="registrationEmail">
 
-				<form name="valid__pass" method="post" action="">
-					<p>Пароль</p>
-						<p><input type="text" class="valid_text" placeholder="*************" size="37" id="userPassword">
 					</p>
-				</form>
+
+					<p>Пароль</p>
+						<p>
+							<label for="registrationPass"></label>
+							<input type="password" class="valid_text" placeholder="*************" size="37" id="registrationPass" name="registrationPass">
+
+					</p>
+
 
 				<input type="radio" name="remember" value="">Запомнить меня
 
@@ -47,7 +51,7 @@
 			  </div>
 	<div class="clearfix"></div>
 				<button type="submit" class="registration_button">Войти в личный кабинет</button>
-
+			</form>
 			</div>
 
 
@@ -380,7 +384,7 @@
 
 <div class="selects1_text1">
 
-			<form class="grey_form grey_form2">
+			<form class="grey_form grey_form2" id="priceFilter">
 
 				<select class="selects1" id="selects">
 					<option value="1">Select 6</option>
@@ -389,16 +393,19 @@
 
 
 				<span class="selects1_text2">Цена</span>
-				<input type="text" class="selects1_text" placeholder="50" size="2">
-				<input type="text" class="selects1_text" placeholder="250000" size="5">
+				<label for="priceFrom"></label>
+				<input class="selects1_text" placeholder="50" size="2" id="priceFrom" name="priceFrom">
+				<label for="priceFor"></label>
+				<input class="selects1_text" placeholder="250000" size="5" id="priceFor" name="priceFor">
 			</div>
-			</form>
+
 
 <!--buttom reset-->
-<div class="reset">
-	<button class="btn_clear"><i class="fas fa-times"></i> Очистить фильтр</buttom>
-	<button class="btn_filter">Применить фильтр</buttom>
-</div>
+				<div class="reset">
+					<button class="btn_clear"><i class="fas fa-times"></i> Очистить фильтр</buttom>
+					<button class="btn_filter">Применить фильтр</buttom>
+				</div>
+			</form>
 
 		</div> <!--coclorfuul-->
 </div>
@@ -688,8 +695,9 @@
 			<div class="course">Будьте в курсе новостей и новинок!</div>
 			<div class="subscription">Подписывайтесь на рассылку</div>
 			<div class="email">
-				<form name="" method="post" action="">
-					<input type="text" class="" placeholder="Укажите свой email для подписки" id="userSubscribe">
+				<form role="form" method="post" action="" id="userSubscribe">
+					<label for="inputEmail"></label>
+					<input type="email" class="" placeholder="Укажите свой email для подписки" name="inputEmail" id="inputEmail">
 					<button type="submit" class="button_discrabe">подписаться</button>
 				</form>
 			</div>
@@ -766,7 +774,8 @@
 <script src="js/jquery-ui.js"></script>
 <script src="js/jquery.maskedinput.js"></script>
 <script src="js/script.js"></script>
-<script>$("#userPhone").mask("+3 (099) -99-999");</script>
+	<script>$("#userPhone").mask("+3 (099) -99-999");</script>
+<script src="js/jquery.validate.js"></script>
 
 </body>
 </html>

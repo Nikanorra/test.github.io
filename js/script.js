@@ -38,35 +38,40 @@ let popupCall = document.getElementById('recallMy'),
 			}
 }
 
-
-	$("#userPhone").mask("+3 (099) -99-999");
-
+});
 
 
-function validate() {
-	var userEmail = document.getElementById("userEmail");
-	var userPassword = document.getElementById("userPassword");
-	var userSubscribe = document.getElementById("userSubscribe");
-
-	event.preventDefault();
-
-	if(!userEmail.value) {
-		userEmail.style.border = "2px solid red";
-		return false;
+$('#userSubscribe').validate({
+	rules: {
+		inputEmail: {
+			required: true,
+			email: true
+		}
 	}
+});
 
-	if(!userPassword.value) {
-		userPassword.style.border = "2px solid red";
-		return false;
+$('#userRegistration').validate({
+	rules: {
+		registrationEmail: {
+			required: true,
+			email: true
+		},
+		registrationPass: {
+			required: true,
+			minlength: 4
+		}
 	}
+});
 
-	if(!userSubscribe.value) {
-		userSubscribe.style.border = "2px solid red";
-		return false;
+$('#priceFilter').validate({
+	rules: {
+		priceFrom: {
+			required: true,
+			number: true
+		},
+		priceFor: {
+			required: true,
+			number: true
+		}
 	}
-
-	return true;
-
-}
-
 });
