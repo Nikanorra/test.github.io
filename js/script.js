@@ -36,16 +36,19 @@ let popupCall = document.getElementById('recallMy'),
 			if(e.target == popupCall) {
 				popupCall.style.display="none";
 			}
-}
-
-});
-
+},
 
 $('#userSubscribe').validate({
 	rules: {
 		inputEmail: {
 			required: true,
 			email: true
+		}
+	},
+	message: {
+		inputEmail: {
+			required: "Укажите свой email",
+			email: "Введите коректный email"
 		}
 	}
 });
@@ -75,3 +78,10 @@ $('#priceFilter').validate({
 		}
 	}
 });
+
+});
+
+
+
+
+//button_discrabe

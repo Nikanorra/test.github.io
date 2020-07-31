@@ -29,10 +29,9 @@
 
 				<form name="valid_email" role="form" method="post" action="" id="userRegistration">
 					<p>Ваш email</p>
-						<p>
-							<label for="registrationEmail"></label>
-							<input type="email" class="valid_text validate[required]" placeholder="mikel_ivanov98@gmail.com" size="37" id="registrationEmail" name="registrationEmail">
-
+					<p>
+						<label for="registrationEmail"></label>
+						<input type="email" class="valid_text validate[required]" placeholder="mikel_ivanov98@gmail.com" size="37" id="registrationEmail" name="registrationEmail">
 					</p>
 
 					<p>Пароль</p>
@@ -284,7 +283,7 @@
 				</div>
 			</div>
 
-				<div class="col-2-4">
+				<div class="col-2-4-1">
 					<div class="search">
 					<a href="https://qna.habr.com/q/172577" class="">Поиск</a>
 					</div>
@@ -394,9 +393,9 @@
 
 				<span class="selects1_text2">Цена</span>
 				<label for="priceFrom"></label>
-				<input class="selects1_text" placeholder="50" size="2" id="priceFrom" name="priceFrom">
+				<input class="selects1_text" placeholder="50" size="2" id="priceFrom" name="priceFrom" type="number">
 				<label for="priceFor"></label>
-				<input class="selects1_text" placeholder="250000" size="5" id="priceFor" name="priceFor">
+				<input class="selects1_text" placeholder="250000" size="5" id="priceFor" name="priceFor" type="number">
 			</div>
 
 
@@ -696,9 +695,13 @@
 			<div class="subscription">Подписывайтесь на рассылку</div>
 			<div class="email">
 				<form role="form" method="post" action="" id="userSubscribe">
-					<label for="inputEmail"></label>
-					<input type="email" class="" placeholder="Укажите свой email для подписки" name="inputEmail" id="inputEmail">
-					<button type="submit" class="button_discrabe">подписаться</button>
+					<div class="col-6-2">
+						<label for="inputEmail"></label>
+						<input type="email" name="inputEmail" id="inputEmail" placeholder="Укажите свой email для подписки">
+					</div>
+					<div class="col-1-1">
+						<button type="submit" class="button_discrabe">подписаться</button>
+					</div>
 				</form>
 			</div>
 
@@ -776,6 +779,9 @@
 <script src="js/script.js"></script>
 	<script>$("#userPhone").mask("+3 (099) -99-999");</script>
 <script src="js/jquery.validate.js"></script>
+	<script>
+
+	</script>
 
 </body>
 </html>

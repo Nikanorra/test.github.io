@@ -144,18 +144,28 @@ float: right;
 }
 
 .popup_cab {
+  width: 50%;
   float: left;
   border-right: 1px solid #dbdbdb;
   padding-right: 45px;
 }
-
+.popup_cab label {
+  padding-top: 2px;
+  position: fixed;
+  font-size: 10px;
+  color: #ff8600;
+}
+.popup_cab p {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
 /*forms*/
 .valid_text {
   line-height: 40px;
   text-indent: 1.5em;
   font-size: 14px;
   color: #9c9c9c;
-  margin: 15px 0 20px;
+  margin: 1px 0 1px;
 }
 .popup_social {
   float: right;
@@ -207,6 +217,7 @@ float: right;
   text-align: center;
   margin-top: 27px;
   border: none;
+  position: fixed;
 }
  /*ЗАЛИВКА меню*/
 .head-line {
@@ -252,6 +263,8 @@ float: right;
   background: #ff8900;
   text-align: center;
   margin-top: 20px;
+  border: none;
+  color: white;
 }
 .recall_button a {
   color: white;
@@ -442,6 +455,7 @@ float: right;
 /*FILTER*/
 .form {
   width: 100%;
+  border: none;
 }
 .form_input,
 .form_label {
@@ -1023,15 +1037,19 @@ footer {
 
 .email {
   font-size: 14px;
-  line-height: 50px;
   color: #9c9c9c;
-  background: #fff;
-  padding-left: 30px;
-  width: 85%;
+  font-weight: normal;
   }
+
 .email input{
   border: none;
-  width: 50%;
+  padding-left: 5px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  width: 100%;
+  }
+.email label{
+  color: #ff8900;
 }
 .button_discrabe {
   float: right;
