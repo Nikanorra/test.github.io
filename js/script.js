@@ -81,10 +81,6 @@ $('#priceFilter').validate({
 	}
 });
 
-//сбросить фильтр
-$("#resetform").click(functional()
-{
-	$("#resetpriceFilter")[0].reset();
-});
+
 
 });
