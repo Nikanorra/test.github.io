@@ -1,5 +1,5 @@
 $ (document).ready(function() {
-
+//попап
 	$('#category_selec').selectmenu();
 
 let popup = document.getElementById('popup_enter'),
@@ -38,6 +38,7 @@ let popupCall = document.getElementById('recallMy'),
 			}
 },
 
+//подписка
 $('#userSubscribe').validate({
 	rules: {
 		inputEmail: {
@@ -53,6 +54,7 @@ $('#userSubscribe').validate({
 	}
 });
 
+//Вход
 $('#userRegistration').validate({
 	rules: {
 		registrationEmail: {
@@ -79,9 +81,7 @@ $('#priceFilter').validate({
 	}
 });
 
+//сбросить фильтр
+
+
 });
-
-
-
-
-//button_discrabe
