@@ -9,9 +9,10 @@ line-height: 50px;
 display: none;
 cursor: pointer;
 }
+
 @media screen and (max-width: 900px) {
   body {
-    min-width: 576px;
+    min-width: 790px;
     max-width: 900px;
     font-family: 'Roboto', sans-serif;
   }
@@ -71,9 +72,9 @@ cursor: pointer;
     .col-2-4 {
       width: 33%;
     }
-    .col-2-4-1 {
-      width: 33%;
-    }
+/*    .col-2-4-1 {
+      width: 32%;
+    } */
 
 
   /*меню*/
@@ -111,14 +112,17 @@ cursor: pointer;
     margin-bottom: 0;
   }
 
-  .col-6-2,
-  .col-1 {
-    width: 50%;
+  .col-6-2 {
+    width: 70%;
   }
-  .email input {
+  .col-1,
+  .col-1-1,
+  .col-1-2 {
+    width: 30%;
+  }
+  .button_discrabe {
     width: 100%;
-    text-align: center;
-}
+  }
   .col-6-1,
   .col-5-1 {
     width: 100%;
@@ -149,11 +153,7 @@ cursor: pointer;
   }
 
   .email {
-    padding-left: 20px;
 	  width: 100%;
-  }
-  .button_discrabe {
-	 width: 20%;
   }
    .col-2-2 {
 	  width: 100%;
@@ -174,13 +174,11 @@ cursor: pointer;
 		padding-left: 15px;
 		padding-right: 15px;
 }
-
-
 /* phone */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 790px) {
   body {
-    min-width: 320px;
-    max-width: 450px;
+    min-width: 576px;
+    max-width: 790px;
     font-family: 'Roboto', sans-serif;
   }
   .col-12,
@@ -193,10 +191,10 @@ cursor: pointer;
   .col-5-1,
   .col-4,
   .col-3,
-  .col-3-1,
   .col-2,
   .col-2-1,
-  .col-1 {
+  .col-1,
+  .col-1-2 {
     width: 100%;
     margin: 0 auto;
   }
@@ -285,8 +283,17 @@ cursor: pointer;
 .go {
     float: none;
 }
+.new_green {
+  margin-left: 0;
+}
+.tobuy_icon {
+  background-position: 20px 13px;
+}
+.tobuy {
+  font-size: 12px;
+  padding: 0;
+}
 .email {
-  padding-left: 10px;
   float: left;
   font-size: 12px;
 }
@@ -322,11 +329,185 @@ cursor: pointer;
 		font-size: 11px;
 }
 
-
-
-@media screen and (max-width: 320px) {
+/* phone */
+@media screen and (max-width: 576px) {
   body {
-    max-width: 320px;
+    min-width: 360px;
+    max-width: 576px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .col-12,
+  .col-11,
+  .col-10,
+  .col-9,
+  .col-9-1,
+  .col-6,
+  .col-6-1,
+  .col-5-1,
+  .col-4,
+  .col-3,
+  .col-3-1,
+  .col-2,
+  .col-2-1,
+  .col-1   {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .col-1-2 {
+    width: 50%;
+  }
+
+.logo {
+  padding: 5px 0 5px 0;
+}
+.recall a {
+  font-size: 9px;
+  padding: 0 5px 0 15px;
+}
+.find {
+  margin-top: 20px;
+}
+.find a {
+  line-height: 50px;
+}
+.car > span {
+  margin-left: 0;
+}
+.menu {
+  margin-right: 0;
+}
+.colorfull {
+    padding: 15px 16px;
+}
+.tab {
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.grey_form>select {
+  width: 19%;
+}
+.grey_form2 {
+    margin: 0 auto;
+}
+.reset button {
+  font-size: 11px;
+  width: 40%;
+}
+
+.car {
+  /*background-position: 0% 156%;*/
+  background: none;
+}
+.car:hover {
+  background-position: 0% 8%;
+}
+
+.big {
+  background: none;
+}
+.big:hover {
+  background-position: 22% 55%;
+}
+.big > span {
+  margin-left: 0;
+}
+.shina {
+  background: none;
+}
+.shina:hover {
+  background-position: 48% -23%;
+}
+.shina > span {
+  margin-left: 0;
+}
+.oil {
+  background: none;
+}
+.oil:hover {
+  background-position: 74% -23%;
+}
+.oil > span {
+  margin-left: 0;
+}
+.battery {
+  background: none;
+}
+.battery:hover {
+  background-position: 110% -23%;
+}
+.battery > span {
+  margin-left: 0;
+}
+.rate {
+  width: 40%;
+}
+.feedback {
+  width: 40%;
+}
+.tobuy_icon {
+    background-position: 30% 13px;
+  }
+.product_pics {
+    width: 100%;
+  }
+.preview {
+    margin: 0 0 0 20%;
+}
+.new_green {
+  margin-left: 20%;
+}
+.sale {
+  margin-right: 20%;
+}
+.availabe {
+  width: 20%;
+}
+.go {
+    float: none;
+}
+.email {
+  padding-left: 10px;
+  float: left;
+  font-size: 12px;
+}
+.email input {
+  width: 100%;
+}
+.col-1-1 {
+  width: 30%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-6-2 {
+    width: 70%;
+  }
+.button_discrabe {
+  width: 100%;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+  .wezom_last {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+  }
+	.wezom_logo {
+		width: 15%;
+}
+
+	.wezom_agency_grey {
+		font-size: 9px;
+
+}
+	.wezom_agency_wh {
+		font-size: 11px;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    max-width: 360px;
     font-family: 'Roboto', sans-serif;
   }
   .contact>div {

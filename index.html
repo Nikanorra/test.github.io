@@ -154,16 +154,31 @@
 
 <!--navigation-->
 			<div class="col-3">
-			<div class="navigation">
-				<div class="basket">
+			<form class="navigation">
+				<button class="basket">
 					<div class="message">
-						<a class="message__link">5</a>
+						<p class="message__link">5</p>
 					</div>
 					<a class="navigation__link">корзина</a>
-				</div>
-				<div class="favorite"><a class="navigation__link">избранное</a></div>
-				<div class="comparison"><a class="navigation__link">сравнение</a></div>
-			</div>
+				</button>
+
+				<button class="favorite">
+					<div class="message">
+						<p class="message__link">5</p>
+					</div>
+					<a class="navigation__link">избранное</a>
+				</button>
+
+				<button class="comparison">
+					<div class="message">
+						<p class="message__link">5</p>
+					</div>
+					<a class="navigation__link">сравнение</a>
+				</button>
+
+				<!--<button class="favorite"><p class="navigation__link">избранное</p></button>
+				<button class="comparison"><p class="navigation__link">сравнение</p></button> -->
+			</form>
 			</div>
 
 
@@ -401,7 +416,7 @@
 
 <!--buttom reset-->
 				<div class="reset">
-					<button class="btn_clear"><i class="fas fa-times"></i> Очистить фильтр</buttom>
+					<button class="btn_clear"><i class="fas fa-times" id="resetBtn"></i> Очистить фильтр</buttom>
 					<button class="btn_filter">Применить фильтр</buttom>
 				</div>
 			</form>
@@ -521,25 +536,25 @@
 		</div>
 <div class="clearfix"></div>
 
-
+		<div class="col-1">
 		<div class="price">
-			<div col-1>
+			<div class="col-1-2">
 				<div class="price_full">
-					<div class="price_full_big">599</div>
+					<div class="price_full_big">600</div>
 					<div class="price_full_sml">грн.</div>
 				</div>
 			</div>
 
-			<div col-1>
+			<div class="col-1-2">
 			<div class="price_sale">
 				<div class="price_line"></div>
 				<div class="price_sale_text">11 250 грн.</div>
 			</div>
 			</div>
 
-			<div class="tobuy">
+			<button class="tobuy">
 				<div class="tobuy_icon"><span>купить товар</span></div>
-			</div>
+			</button>
 
 		<div class="simile">
 
@@ -555,6 +570,7 @@
 
 		</div>
 
+</div>
 </div>
 </div>
 <!--3-->
@@ -781,9 +797,9 @@
 <script src="js/jquery.validate.js"></script>
 	<script>
 
-	$("#resetform").click(functional()
+	$("#resetBtn").click(functional()
 	{
-		$("#resetpriceFilter")[0].reset();
+		$("#priceFilter")[0].reset();
 
 	</script>
 
