@@ -507,21 +507,20 @@ float: right;
   top: 0;
   z-index: -1;
 }
-
-.search a {
-  display: block;
+.search {
   background: #ff8900;
+  width: 100%;
   font-size: 16px;
   line-height: 56px;
-  width: 100%;
   color: white;
+  padding: 0 57px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
   border: none;
   padding: 0;
 }
-.search a:hover {
+.search:hover {
   background: #db7200;
   cursor: pointer;
 }
@@ -926,6 +925,7 @@ font-weight: bold;
   margin-top: 8px;
 }
 .price_sale {
+  position: relative;
   text-align: center;
   font-style: italic;
   font-weight: 900;
@@ -933,15 +933,17 @@ font-weight: bold;
   line-height: 26px;
   color: #989898;
   text-transform: uppercase;
-  position: relative;
 }
 .price_line {
-  float: right;
-  width: 30%;
-  border-bottom: 1px solid #e00000;
-  margin-left: 153px;
-  margin-top: 12px;
   position: absolute;
+  width: 60%;
+  border-bottom: 1px solid #e00000;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+
 }
 
 /*КНОПКА КУПИТЬ*/
@@ -984,6 +986,7 @@ font-weight: bold;
   float: left;
   background: url("../img/comparison01.png") no-repeat;
   line-height: 36px;
+  padding-left: 10px;
 }
 .tobuy_compare {
   float: left;
@@ -1002,6 +1005,7 @@ font-weight: bold;
   float: left;
   background: url("../img/favorite01.png") no-repeat;
   line-height: 36px;
+  padding-left: 10px;
 }
 
 .tobuy_favorite {

@@ -72,10 +72,15 @@ cursor: pointer;
     .col-2-4 {
       width: 33%;
     }
-/*    .col-2-4-1 {
-      width: 32%;
-    } */
-
+.col-2-4-1 {
+      width: 33%;
+    }
+    .col-6-2 {
+      width: 50%;
+    }
+    .col-6-2-1 {
+      width: 50%;
+    }
 
   /*меню*/
   .menu__list {
@@ -110,10 +115,6 @@ cursor: pointer;
   }
   .products {
     margin-bottom: 0;
-  }
-
-  .col-6-2 {
-    width: 70%;
   }
   .col-1,
   .col-1-1,
@@ -198,6 +199,12 @@ cursor: pointer;
     width: 100%;
     margin: 0 auto;
   }
+  .col-8 {
+    width: 50%;
+  }
+  .col-2-4-1 {
+    width: 17%;
+  }
 .logo {
   padding: 5px 0 5px 0;
 }
@@ -210,6 +217,9 @@ cursor: pointer;
 }
 .find a {
   line-height: 50px;
+}
+.search {
+
 }
 .car > span {
   margin-left: 0;
@@ -286,6 +296,9 @@ cursor: pointer;
 .new_green {
   margin-left: 0;
 }
+.simile {
+  font-size: 11px;
+  }
 .tobuy_icon {
   background-position: 20px 13px;
 }
@@ -303,9 +316,6 @@ cursor: pointer;
 .col-1-1 {
   width: 30%;
 }
-.col-6-2 {
-    width: 70%;
-  }
 .button_discrabe {
   width: 100%;
   display: block;
@@ -332,7 +342,7 @@ cursor: pointer;
 /* phone */
 @media screen and (max-width: 576px) {
   body {
-    min-width: 360px;
+    min-width: 380px;
     max-width: 576px;
     font-family: 'Roboto', sans-serif;
   }
@@ -356,7 +366,6 @@ cursor: pointer;
   .col-1-2 {
     width: 50%;
   }
-
 .logo {
   padding: 5px 0 5px 0;
 }
@@ -439,10 +448,15 @@ cursor: pointer;
   margin-left: 0;
 }
 .rate {
-  width: 40%;
+  width: 30%;
 }
 .feedback {
-  width: 40%;
+  width: 35%;
+  padding: 0 3%;
+  text-align: center;
+}
+.availabe {
+  width: 35%;
 }
 .tobuy_icon {
     background-position: 30% 13px;
@@ -453,14 +467,22 @@ cursor: pointer;
 .preview {
     margin: 0 0 0 20%;
 }
-.new_green {
-  margin-left: 20%;
+.products {
+  position: relative;
 }
-.sale {
-  margin-right: 20%;
+.product_labe {
+  padding: 5px 10% 0 10%;
 }
-.availabe {
-  width: 20%;
+.product_labe>div {
+  margin: 0 3%;
+}
+
+.price_sale {
+  position: relative;
+}
+.price_line {
+  margin-left: auto;
+  margin-right: auto;
 }
 .go {
     float: none;
@@ -473,15 +495,16 @@ cursor: pointer;
 .email input {
   width: 100%;
 }
+.col-6-2-1 {
+  width: 70%;
+}
 .col-1-1 {
   width: 30%;
 }
 .col-1-2 {
   width: 50%;
 }
-.col-6-2 {
-    width: 70%;
-  }
+
 .button_discrabe {
   width: 100%;
   display: block;
@@ -505,9 +528,10 @@ cursor: pointer;
 		font-size: 11px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   body {
-    max-width: 360px;
+    min-width: 300px;
+    max-width: 380px;
     font-family: 'Roboto', sans-serif;
   }
   .contact>div {
@@ -535,21 +559,15 @@ cursor: pointer;
 .search a {
   line-height: 56px;
 }
-/*.email input {
-    width: 50%;
-    text-align: center;
-}
-.email label{
-  width: 0%;
-}
-.button_discrabe {
-    width: 100%;
-  }
-  */
   .email {
       padding-left: 0px;
   }
-
   .reset button {
       font-size: 9px;
+  }
+  .product_labe {
+    padding: 5px 0 0 0;
+  }
+  .product_labe>div {
+    margin: 0 3%;
   }
