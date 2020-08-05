@@ -289,7 +289,9 @@ cursor: pointer;
 .battery > span {
   margin-left: 0;
 }
-
+.products {
+  border-bottom: none;
+}
 .go {
     float: none;
 }
@@ -404,7 +406,6 @@ cursor: pointer;
 }
 
 .car {
-  /*background-position: 0% 156%;*/
   background: none;
 }
 .car:hover {

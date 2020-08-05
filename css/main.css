@@ -992,8 +992,8 @@ font-weight: bold;
   float: left;
 }
 .tobuy_compare_text, .tobuy_favorite_text {
-  padding-left: 35px;
-  padding-right: 15px;
+  padding-left: 28px;
+  padding-right: 5px;
   text-decoration: underline;
 }
 .tobuy_compare_text:hover, .tobuy_favorite_text:hover {
