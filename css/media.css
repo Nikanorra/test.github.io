@@ -361,7 +361,6 @@ cursor: pointer;
 }
 .email {
   float: left;
-  font-size: 12px;
 }
 .email input {
   width: 100%;
@@ -542,7 +541,6 @@ cursor: pointer;
 .email {
   padding-left: 10px;
   float: left;
-  font-size: 12px;
 }
 .email input {
   width: 100%;
@@ -582,7 +580,7 @@ cursor: pointer;
 
 @media screen and (max-width: 380px) {
   body {
-    min-width: 300px;
+    min-width: 310px;
     max-width: 380px;
     font-family: 'Roboto', sans-serif;
   }
@@ -607,7 +605,7 @@ cursor: pointer;
   .form_input, .form_label {
       font-size: 15px;
   }
-}
+
 .search a {
   line-height: 56px;
 }
@@ -623,3 +621,37 @@ cursor: pointer;
   .product_labe>div {
     margin: 0 3%;
   }
+.button_discrabe {
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 310px) {
+  body {
+    min-width: 280px;
+    max-width: 310px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .product_labe>div {
+    margin: 0 1%;
+  }
+  .preview {
+    margin: 0 0 0 10%;
+}
+.tobuy_icon {
+    background-position: 10% 13px;
+}
+.feedback {
+    width: 35%;
+    padding: 0 1%;
+    font-size: 10px;
+}
+.tobuy_compare_text, .tobuy_favorite_text {
+    padding-left: 24px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+.email input{
+  font-size: 10px;
+  padding-bottom: 21px;
+  }
+}
