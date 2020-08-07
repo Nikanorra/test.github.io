@@ -165,7 +165,7 @@ float: right;
   text-indent: 1.5em;
   font-size: 14px;
   color: #9c9c9c;
-  margin: 1px 0 1px;
+  margin: 1px 0 20px;
 }
 .popup_social {
   float: right;
@@ -262,9 +262,10 @@ float: right;
   padding: 0 26px 0 26px;
   background: #ff8900;
   text-align: center;
-  margin-top: 20px;
   border: none;
   color: white;
+  margin: 0 auto;
+  display: block;
 }
 .recall_button a {
   color: white;

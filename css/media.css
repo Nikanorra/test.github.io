@@ -182,6 +182,57 @@ cursor: pointer;
     max-width: 790px;
     font-family: 'Roboto', sans-serif;
   }
+  .popup_enter_bg {
+    width: 270px;
+    height: 100%;
+  }
+  .popup_enter_sml {
+    width: 250px;
+    height: 570px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .popup_cab {
+    width: 100%;
+    border: none;
+    padding-right: 0;
+    padding-bottom: 80px
+  }
+  .popup_enter h2, .popup_social h2 {
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .popup_cab p {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 13px;
+  }
+  .valid_text {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: 95%;
+  }
+  .popup_social {
+    width: 100%;
+    border: none;
+    padding-right: 0;
+    padding-bottom: 80px;
+  }
+  .registration_social div {
+      width: 95%;
+      height: 50px;
+      line-height: 50px;
+      margin-bottom: 10px;
+  }
+  .recall_bg  {
+    width: 270px;
+  }
+  .recall_sml {
+    width: 250px;
+    height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
   .col-12,
   .col-11,
   .col-10,
@@ -219,7 +270,7 @@ cursor: pointer;
   line-height: 50px;
 }
 .search {
-
+  background: linear-gradient(to top, #ff8500, #ffae00);
 }
 .car > span {
   margin-left: 0;
@@ -564,7 +615,7 @@ cursor: pointer;
       padding-left: 0px;
   }
   .reset button {
-      font-size: 9px;
+      font-size: 8px;
   }
   .product_labe {
     padding: 5px 0 0 0;
