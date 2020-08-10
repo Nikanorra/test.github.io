@@ -358,57 +358,54 @@
 
 <!--buttom-->
 			<div class="col-3">
-			<div class="tab">
-
+			<form class="grey_form">
+				<div class="tab">
 					<a href="#" class="tab_button01">Tab 1</a>
 					<a href="#" class="tab_button02">Tab 2</a>
-
-			</div>
+				</div>
 		</div>
 <div class="clearfix"></div>
 
 
 <!--SELECTS-->
-			<form class="grey_form">
-
-				<select class="selects1" id="selects">
+			<div class="selects_option">
+				<select class="selects1" id="selectsFirst">
 					<option value="1">Select 1</option>
 					<option value="2">Select 2</option>
 				</select>
 
 
-				<select class="selects1" id="selects">
+				<select class="selects1" id="selectsSecond">
 					<option value="1">Select 2</option>
 					<option value="2">Select 1</option>
 				</select>
 
-				<select class="selects1" id="selects">
+				<select class="selects1" id="selectsThird">
 					<option value="1">Select 3</option>
 					<option value="2">Select 1</option>
 				</select>
 
-				<select class="selects1" id="selects">
+				<select class="selects1" id="selectsForth">
 					<option value="1">Select 4</option>
 					<option value="2">Select 1</option>
 				</select>
+			</div>
 
-			</form>
+<div class="selects_option">
+		<!--	<form class="grey_form grey_form2" id="priceFilter">-->
 
-<div class="selects1_text1">
-
-			<form class="grey_form grey_form2" id="priceFilter">
-
-				<select class="selects1" id="selects">
+				<select class="selects2" id="selectsSix">
 					<option value="1">Select 6</option>
 					<option value="2">Select 2</option>
 				</select>
 
-
+				<div class="selects2">
 				<span class="selects1_text2">Цена</span>
 				<label for="priceFrom"></label>
-				<input class="selects1_text" placeholder="50" min="0" size="2" id="priceFrom" name="priceFrom" type="number">
+				<input class="selects1_text" placeholder="50" min="0" id="priceFrom" name="priceFrom" type="number">
 				<label for="priceFor"></label>
-				<input class="selects1_text" placeholder="250000" min="0" size="5" id="priceFor" name="priceFor" type="number">
+				<input class="selects1_text" placeholder="250000" min="0" id="priceFor" name="priceFor" type="number">
+				</div>
 			</div>
 
 
@@ -417,7 +414,7 @@
 					<button class="btn_clear"><i class="fas fa-times" id="resetBtn"></i> Очистить фильтр</buttom>
 					<button class="btn_filter">Применить фильтр</buttom>
 				</div>
-			</form>
+		</form>
 
 		</div> <!--coclorfuul-->
 </div>
