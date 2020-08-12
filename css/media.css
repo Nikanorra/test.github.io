@@ -66,6 +66,7 @@ input.wrapper_mob:checked ~ ul {
 }
 .menu.active {
   display: block;
+  width: 100%;
 }
 
 /*--contacts--*/
@@ -93,13 +94,17 @@ input.wrapper_mob:checked ~ ul {
     .navigation>div {
         font-size: 7px;
     }
+    .col-3-2,
+    .col-9-1 {
+      width: 100%;
+    }
     .col-8 {
       width: 34%;
     }
     .col-2-4 {
       width: 33%;
     }
-.col-2-4-1 {
+    .col-2-4-1 {
       width: 33%;
     }
     .col-6-2 {
@@ -273,6 +278,7 @@ input.wrapper_mob:checked ~ ul {
   .col-5-1,
   .col-4,
   .col-3,
+  .col-3-2
   .col-2,
   .col-2-1,
   .col-1,
@@ -436,6 +442,7 @@ input.wrapper_mob:checked ~ ul {
   .col-4,
   .col-3,
   .col-3-1,
+  .col-3-2
   .col-2,
   .col-2-1,
   .col-1   {
