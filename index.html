@@ -281,12 +281,12 @@
 <!--FILTER-->
 <div class="filter__site">
 		<div class="col-9-1">
-			<form class="form">
+			<form class="form" id="searchFilter">
 			<div class="col-8">
 
 				<div class="form_group">
-						<input type="text" placeholder="Поиск по сайту" class="form_input">
-						<label for="" class="form_label"> </label>
+						<input type="text" placeholder="Поиск по сайту" class="form_input" id="inputFilter">
+						<label for="inputFilter" class="form_label"></label>
 				</div>
 
 			</div>
@@ -361,7 +361,7 @@
 
 <!--buttom-->
 			<div class="col-3">
-			<form class="grey_form">
+			<form class="grey_form" id="priceFilter">
 				<div class="tab">
 					<a href="#" class="tab_button01">Tab 1</a>
 					<a href="#" class="tab_button02">Tab 2</a>
@@ -809,13 +809,12 @@
 <script src="js/script.js"></script>
 	<script>$("#userPhone").mask("+38 (099) 999-99-99");</script>
 <script src="js/jquery.validate.js"></script>
-	<script>
 
-	$("#resetBtn").click(functional()
+<!--	<script>
+		$("#resetBtn").click(functional()
 	{
 		$("#priceFilter")[0].reset();
-
-	</script>
+	</script> -->
 
 </body>
 </html>

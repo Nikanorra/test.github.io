@@ -68,6 +68,20 @@ $('#userRegistration').validate({
 	}
 });
 
+//Filter
+$('#searchFilter').validate({
+	rules: {
+		registrationEmail: {
+			required: true,
+			email: true
+		},
+		registrationPass: {
+			required: true,
+			minlength: 4
+		}
+	}
+});
+
 $('#priceFilter').validate({
 	rules: {
 		priceFrom: {
@@ -81,9 +95,9 @@ $('#priceFilter').validate({
 	}
 });
 
+//orange menu
 	$('.menu__list__white').click(function(event) {
 		$('.menu__list__white, .menu').toggleClass('active');
-		$('body').toggleClass('lock');
 	});
 
 

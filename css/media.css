@@ -82,6 +82,9 @@ input.wrapper_mob:checked ~ ul {
     font-size: 10px;
     padding: 0 10px 0 30px;
   }
+  .navigation>button {
+    font-size: 8px;
+  }
     .comparison {
       width: 31%;
     }
@@ -91,10 +94,7 @@ input.wrapper_mob:checked ~ ul {
     .basket {
       width: 31%;
     }
-    .navigation>div {
-        font-size: 7px;
-    }
-    .col-3-2,
+      .col-3-2,
     .col-9-1 {
       width: 100%;
     }
