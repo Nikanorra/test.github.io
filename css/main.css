@@ -397,10 +397,10 @@ float: right;
   background-position: top;
   margin-top: -11px;
   left: 45%;
-  display: none;
 }
-.message:checked {
-  display: block;
+.favorite>div,
+.comparison>div {
+  display: none;
 }
 .message__link {
   font-size: 11px;
