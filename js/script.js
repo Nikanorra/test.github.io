@@ -81,6 +81,10 @@ $('#priceFilter').validate({
 	}
 });
 
+	$('.menu__list__white').click(function(event) {
+		$('.menu__list__white, .menu').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
 
 
 });

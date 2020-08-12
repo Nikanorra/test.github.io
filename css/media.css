@@ -1,4 +1,15 @@
-/* Медиа-запросы */
+/*Меню оранж*/
+.wrapper_org [type="checkbox"] {
+  display: none;
+}
+.wrapper_mob_org {
+color: #c3c3c3;
+padding: 0 37px 0 10px;
+line-height: 50px;
+display: none;
+cursor: pointer;
+}
+/*Меню серое*/
 .wrapper [type="checkbox"] {
   display: none;
 }
@@ -9,37 +20,53 @@ line-height: 50px;
 display: none;
 cursor: pointer;
 }
-
+/* Медиа-запросы */
 @media screen and (max-width: 900px) {
   body {
     min-width: 790px;
     max-width: 900px;
     font-family: 'Roboto', sans-serif;
   }
+  /*body.lock {
+    overflow: hidden;
+  }
+  /*меню header*/
   .wrapper {
     float: left;
   }
-  .about__items {
-    float: none;
-    text-align: left;
-    padding: 0 37px 0 10px;
-  }
-
-  .wrapper ul {
-    display: none;
-  }
-  .wrapper_mob {
-    display: block;
-  }
-  input.wrapper_mob:checked + label.wrapper_mob {
-    background:  #ff8900;
-    color: white;
-  }
-  input.wrapper_mob:checked ~ ul {
-    display: block;
-  }
+  .wrapper a {
+   color: grey;
+}
+.wrapper a:hover {
+ color: black;
+}
+.about__items {
+  float: none;
+  text-align: left;
+  padding: 0 37px 0 10px;
+}
+.wrapper ul {
+  display: none;
+}
+.wrapper_mob {
+  display: block;
+}
+input.wrapper_mob:checked + label.wrapper_mob {
+  color: white;
+}
+input.wrapper_mob:checked ~ ul {
+  display: block;
+}
 /*end of header*/
 
+/*menu orange*/
+.menu {
+  display: none;
+  background: white;
+}
+.menu.active {
+  display: block;
+}
 
 /*--contacts--*/
   .contact>div {
@@ -83,9 +110,6 @@ cursor: pointer;
     }
 
   /*меню*/
-  .menu__list {
-    display: none;
-  }
   .category {
     text-indent: none;
   }
@@ -101,17 +125,17 @@ cursor: pointer;
   .form_input,
   .form_label {
     font-size: 12px;
+  }
 
-  }
-  .form_input {
-    font-size: 5px;
-  }
 .col-9 {
     float: none;
     width: 100%;
   }
   .col-3-1 {
     width: 50%;
+  }
+  .selects1_text2 {
+    width: 10%;
   }
   .products {
     margin-bottom: 0;
@@ -188,7 +212,7 @@ cursor: pointer;
   }
   .popup_enter_sml {
     width: 250px;
-    height: 570px;
+    height: 520px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -201,6 +225,13 @@ cursor: pointer;
   .popup_enter h2, .popup_social h2 {
     font-size: 15px;
     line-height: 35px;
+  }
+  .registration_social div {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .registration_fb {
+    height: 25px;
   }
   .popup_cab p {
     padding-bottom: 5px;
@@ -216,13 +247,12 @@ cursor: pointer;
     width: 100%;
     border: none;
     padding-right: 0;
-    padding-bottom: 80px;
   }
   .registration_social div {
-      width: 95%;
-      height: 50px;
-      line-height: 50px;
-      margin-bottom: 10px;
+      width: 100%;
+      height: 25px;
+      line-height: 25px;
+      margin-bottom: 5px;
   }
   .recall_bg  {
     width: 270px;
@@ -269,9 +299,6 @@ cursor: pointer;
 .find a {
   line-height: 50px;
 }
-.search {
-  background: linear-gradient(to top, #ff8500, #ffae00);
-}
 .car > span {
   margin-left: 0;
 }
@@ -297,7 +324,6 @@ cursor: pointer;
 }
 
 .car {
-  /*background-position: 0% 156%;*/
   background: none;
 }
 .car:hover {
@@ -339,6 +365,9 @@ cursor: pointer;
 }
 .battery > span {
   margin-left: 0;
+}
+.selects1_text {
+      margin-left: 7px;
 }
 .products {
   border-bottom: none;
@@ -382,10 +411,8 @@ cursor: pointer;
 	.wezom_logo {
 		width: 15%;
 }
-
 	.wezom_agency_grey {
 		font-size: 9px;
-
 }
 	.wezom_agency_wh {
 		font-size: 11px;
@@ -498,6 +525,9 @@ cursor: pointer;
 .battery > span {
   margin-left: 0;
 }
+.tab, .selects1, .selects2, .selects1_text2, .selects1_text {
+  font-size: 10px;
+}
 .rate {
   width: 30%;
 }
@@ -539,7 +569,6 @@ cursor: pointer;
     float: none;
 }
 .email {
-  padding-left: 10px;
   float: left;
 }
 .email input {
