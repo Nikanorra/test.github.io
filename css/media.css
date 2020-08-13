@@ -60,6 +60,12 @@ input.wrapper_mob:checked ~ ul {
 /*end of header*/
 
 /*menu orange*/
+.wrapper_org {
+  z-index: 100;
+}
+.category {
+  z-index: 1;
+}
 .menu {
   display: none;
   background: white;
@@ -204,6 +210,7 @@ input.wrapper_mob:checked ~ ul {
 		padding-left: 15px;
 		padding-right: 15px;
 }
+}
 /* phone */
 @media screen and (max-width: 790px) {
   body {
@@ -278,13 +285,12 @@ input.wrapper_mob:checked ~ ul {
   .col-5-1,
   .col-4,
   .col-3,
-  .col-3-2
+  .col-3-2,
   .col-2,
   .col-2-1,
   .col-1,
   .col-1-2 {
     width: 100%;
-    margin: 0 auto;
   }
   .col-8 {
     width: 50%;
@@ -442,12 +448,10 @@ input.wrapper_mob:checked ~ ul {
   .col-4,
   .col-3,
   .col-3-1,
-  .col-3-2
-  .col-2,
+  .col-3-2,
   .col-2-1,
   .col-1   {
     width: 100%;
-    margin: 0 auto;
   }
   .col-1-2 {
     width: 50%;
