@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<title>wezom-test</title>
+
+	<link rel="stylesheet" href="css/jquery-ui.css">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles-header-main.css">
+	<link rel="stylesheet" href="css/styles-logo.css">
+	<link rel="stylesheet" href="css/styles-forms.css">
+	<link rel="stylesheet" href="css/styles-cards.css">
+	<link rel="stylesheet" href="css/styles-footer.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="css/grid.css">
+
+
+	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<section class="popup" id="popupEnter">
+
+
+				<div class="popup__enter">
+
+					<div class="popup__enter-wrap">
+						<span class="close">&#10006;</span>
+
+						<div class="popup__enter-bg">
+							<div class="enter__cabinet">
+								<h2>Вход в личный кабинет</h2>
+								<form name="valid_email" role="form" method="post" action="" id="userRegistration">
+									<p>Ваш email</p>
+									<p>
+										<label for="registrationEmail"></label>
+										<input type="email" class="valid_text validate[required]" placeholder="mikel_ivanov98@gmail.com" size="37" id="registrationEmail" name="registrationEmail">
+									</p>
+
+									<p>Пароль</p>
+									<p>
+										<label for="registrationPass"></label>
+										<input type="password" class="valid_text" placeholder="*************" size="37" id="registrationPass" name="registrationPass">
+									</p>
+
+									<label class="label">
+										<input type="radio" class="radio" name="radio_active">
+										<span class="text">Запомнить меня</span>
+									</label>
+
+									<div class="registration_link">
+										<a href="#">Забыли пароль?</a>
+										<a href="#">Регистрация</a>
+								  </div>
+									<button type="submit" class="registration_button">Войти в личный кабинет</button>
+								</form>
+							</div>
+
+						<div class="enter__social">
+							<h2>Войти с помощью</h2>
+							<div class="enter__social-wrapp">
+								<div class="registration_fb">
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+										<span>Facebook</span>
+									</a>
+								</div>
+
+								<div class="registration_tw">
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+										<span>Twitter</span>
+									</a>
+								</div>
+
+								<div class="registration_gl">
+									<a href="#">
+										<i class="fab fa-google"></i>
+										<span>Google</span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+	</section>
+	<section class="popup-recall" id="popupRecall">
+
+				<div class="popup__enter">
+
+					<div class="popup__enter-wrap">
+						<span class="closeRecall">&#10006;</span>
+
+						<div class="popup__enter-bg">
+							<div class="enter__cabinet">
+								<h2>Перезвоните мне</h2>
+								<form class="recall-form" name="valid_email" role="form" method="post" action="">
+									<p>Номер телефона</p>
+									<p>
+										<label for="registrationEmail"></label>
+										<input type="text" class="valid_text validate[required]" placeholder="+38(0__) ___ - __ - __" size="13" id="userPhone" name="registrationEmail">
+									</p>
+
+									<button type="submit" class="registration_button orange">Перезвоните мне</button>
+								</form>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+	</section>
+
+<header class="head">
+	<div class="container">
+		<div class="head__wrapp">
+
+			<div class="head__burger"><i class="fas fa-bars"></i></div>
+
+		 	<nav class="head__nav">
+		 		<ul class="head__list">
+		 			<li class="head__link"><a href="#">Главная</a></li>
+		 			<li class="head__link"><a href="#">О компании</a></li>
+		 			<li class="head__link"><a href="#">ССылка 1</a></li>
+		 			<li class="head__link"><a href="#">ссылка 2 </a></li>
+		 			<li class="head__link"><a href="#">ссылка 3</a></li>
+		 		</ul>
+		 	</nav>
+
+			<button class="head__btn" id="myBtn">
+				<img src="img/person.png" alt="">
+				<span>Вход</span>
+			</button>
+		</div>
+	</div>
+</header>
+
+<section class="info">
+	<div class="container">
+
+		<div class="col-3">
+			<div class="info__logo">
+				<img src="img/Test.png" alt="wezom">
+			</div>
+		</div>
+
+		<div class="col-6">
+			<div class="info__contacts">
+
+			<div class="info__contacts-wrapp">
+				<div class="info__contacts-number">+380 98 170 00 740</div>
+				<div class="info__contacts-number">+380 98 170 00 740</div>
+			</div>
+
+			<button class="info__contacts-phone" id="recallBtn">
+				<img src="img/phone.png" alt="icon-tel">
+				<span>Перезвонить мне</span>
+			</button>
+
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="info__special">
+				<button class="info__special-wrapp">
+					<a href="#">
+					<div class="info__special-control">
+
+						<div class="info__special-control-active">
+							<div class="info__special-control-active__img">
+								<img src="img/digitsbg05.png" alt="phone icon">
+							</div>
+							<div class="info__special-control-active__number">5</div>
+						</div>
+
+						<div class="info__special-control-icon">
+							<img src="img/comparison.png" alt="сравнение" height="36px">
+						</div>
+
+						<div class="info__special-control-text">сравнение</div>
+
+					</div>
+					</a>
+				</button>
+
+				<button class="info__special-wrapp">
+					<a href="#">
+					<div class="info__special-control">
+
+						<div class="info__special-control-active">
+							<div class="info__special-control-active__img">
+								<img src="img/digitsbg05.png" alt="message">
+							</div>
+							<div class="info__special-control-active__number">5</div>
+						</div>
+
+						<div class="info__special-control-icon">
+							<img src="img/favorite.png" alt="избранное" height="36px">
+						</div>
+
+						<div class="info__special-control-text">избранное</div>
+
+					</div>
+					</a>
+				</button>
+
+				<button class="info__special-wrapp"><a href="#">
+					<div class="info__special-control">
+
+						<div class="info__special-control-active">
+							<div class="info__special-control-active__img">
+								<img src="img/digitsbg05.png" alt="">
+							</div>
+							<div class="info__special-control-active__number">5</div>
+						</div>
+
+						<div class="info__special-control-icon">
+							<img src="img/basket.png" alt="корзина" height="36px">
+						</div>
+
+						<div class="info__special-control-text">корзина</div>
+
+					</div>
+					</a>
+				</button>
+
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="navigation">
+	<div class="container">
+		<div class="col-3">
+			<div class="menu">
+				<div class="menu__wrapper">
+					<div class="menu__head">
+						<div class="menu__head-btn">
+							<svg class="menu-bar" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
+								<g id="Menu_1_">
+									<path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+										c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"/>
+									<path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+										S379.58,180.455,372.939,180.455z"/>
+									<path d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606
+										c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"/>
+								</g>
+							</svg>
+							<!-- <img src="img/burger.png" alt="menu"> -->
+						</div>
+						<div class="menu__head-title">Меню</div>
+					</div>
+
+					<div class="menu__body">
+						<div class="menu__body-wrapper">
+							<nav class="menu__body-nav">
+								<ul class="menu__body-ul">
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 1</span>
+											<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+												 xml:space="preserve">
+												<g>
+													<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+														c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+														c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+												</g>
+											</svg>
+										</a>
+									</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 2</span>
+											<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+												 xml:space="preserve">
+												<g>
+													<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+														c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+														c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+												</g>
+											</svg>
+										</a>
+									</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 3</span>
+											<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+												 xml:space="preserve">
+												<g>
+													<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+														c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+														c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+												</g>
+											</svg>
+										</a>
+									</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 4</span>
+											<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+												 xml:space="preserve">
+												<g>
+													<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+														c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+														c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+												</g>
+											</svg>
+										</a>
+									</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 5</span>
+											<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+												 xml:space="preserve">
+												<g>
+													<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+														c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+														c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+												</g>
+											</svg>
+										</a>
+									</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 6</span>
+											<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+												 xml:space="preserve">
+												<g>
+													<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+														c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+														c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+												</g>
+											</svg>
+										</a>
+									</li>
+
+									<li class="menu__body-list">
+										<a href="#">
+											<span>ССылка 7</span>
+											<svg class="menu-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+												 xml:space="preserve">
+												<g>
+													<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+														c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+														c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+												</g>
+											</svg>
+										</a>
+									</li>
+
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-9">
+
+			<form class="form__search" action="">
+
+				<div class="form__option">
+					<div class="form__option-search">
+						<label class="form__search-label" for="formId"></label>
+						<input type="search" id="formId" name="q" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+					</div>
+
+					 <div class="form__option-category">
+						 <select class="form__category" name="category" id="categoryId">
+							 <option hidden selected disabled>Все категории</option>
+							 <option value="1">Зимние</option>
+							 <option value="2">Летние</option>
+							 <option value="3">Аксессуары</option>
+						 </select>
+					 </div>
+				 </div><!--form__option-->
+
+			 	<button class="form__btn">Поиск</button>
+			</form>
+
+			<div class="filter">
+				<div class="filter__header">
+					<nav class="filter__header-nav">
+				 		<ul class="filter__header-list">
+				 			<li class="filter__header-link">
+								<p class="car">
+									<a href="#">ССылка 1</a>
+								</p>
+							</li>
+				 			<li class="filter__header-link">
+								<p class="big">
+									<a href="#">ссылка 2</a>
+								</p>
+							</li>
+				 			<li class="filter__header-link">
+								<p class="shina">
+									<a href="#">ссылка 3</a>
+								</p>
+							</li>
+							<li class="filter__header-link">
+								<p class="oil">
+									<a href="#">ссылка 4</a>
+								</p>
+							</li>
+				 			<li class="filter__header-link">
+								<p class="battery">
+									<a href="#">ссылка 5</a>
+								</p>
+							</li>
+				 		</ul>
+				 	</nav>
+				</div>
+
+				<div class="filter__body">
+					<div class="col-4">
+						<div class="filter__body-tab">
+							<input id="id1" type="radio" name="test" checked>
+							<label class="tab__1" for="id1">Tab 1</label>
+							<input id="id2" type="radio" name="test" checked>
+							<label class="tab__2" for="id2">Tab 2</label>
+						</div>
+					</div>
+
+<!--select * 6 -->
+			<div class="filter__body-selects">
+				<div>
+					<select class="filter__body-options" id="selectsFirst">
+						<option value="1">Select 1</option>
+						<option value="2">Select 11</option>
+					</select>
+				</div>
+
+				<div>
+					<select class="filter__body-select" id="selectsSecond">
+						<option value="1">Select 2</option>
+						<option value="2">Select 12</option>
+					</select>
+				</div>
+
+				<div>
+					<select class="filter__body-select" id="selectsThird">
+						<option value="1">Select 3</option>
+						<option value="2">Select 13</option>
+					</select>
+				</div>
+
+				<div>
+					<select class="filter__body-select" id="selectsForth">
+						<option value="1">Select 4</option>
+						<option value="2">Select 144</option>
+					</select>
+				</div>
+			</div>
+
+
+			<div class="filter__body-price">
+
+				<div class="selects-price-select">
+					<select class="filter__body-options" id="selectsFirst">
+						<option value="1">Select 1</option>
+						<option value="2">Select 11</option>
+					</select>
+				</div>
+
+				<div class="">
+
+					<div class="filter__price">Цена</div>
+
+					<label for="priceFrom">
+						<input class="filter__body-price-input" type="number" placeholder="50" min="0" id="priceFrom" name="priceFrom">
+					</label>
+
+					<label for="priceFrom">
+						<input type="number" placeholder="25000" min="0" id="priceFrom" name="priceFrom">
+					</label>
+
+				</div>
+
+
+			</div> <!--filter__body-selects price-->
+
+
+			<div class="filter__body-btn">
+				<button class="btn_clear">
+					<i class="fas fa-times"></i>
+					Очистить фильтр
+				</button>
+				<button class="btn_filter">Применить фильтр</button>
+			</div>
+
+				</div>
+			</div>
+
+		</div> <!--col-9-->
+
+	</div><!--container-->
+</section>
+
+<!--products-->
+<section class="products">
+	<div class="container">
+
+		<div class="products__title">
+			<div class="products__title-text">
+				<span>Карточки товаров</span>
+			</div>
+			<div class="products__catalog">
+				<a href="#">
+					<span class="products__catalog-text">Ссылка в каталог</span>
+					<span class="products__catalog-arrow">&rarr;</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="products__cards">
+
+			<div class="col-3">
+				<div class="products__cards-items">
+					<div class="cards__mark">Mark</div>
+					<div class="cards__description">
+						<span>Антифриз Fosser Antifreeze</span>
+						<span>FA 12 Readymix 1 л Concentrat, Germany</span>
+					</div>
+					<div class="cards__rate">
+						<div class="cards__rate-stars"></div>
+						<div class="cards__rate-feeedback">Отзывы (10)</div>
+						<div class="cards__rate-availability">В наличии: 24 шт</div>
+					</div>
+					<div class="cards__main">
+						<div class="cards__feature">
+							<div class="cards__feature-summer">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">Летняя</div>
+							</div>
+							<div class="cards__feature-car">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">легковая</div>
+							</div>
+							<div class="cards__feature-new">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">новая</div>
+							</div>
+						</div>
+						<div class="cards_img">
+							<img src="img/shina-1.jpg" alt="goods" width="160" align="middle">
+						</div>
+					</div>
+					<div class="cards__status">
+						<div class="cards__status-new">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">Новинка</div>
+						</div>
+						<div class="cards__status-popular">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">Хит</div>
+						</div>
+						<div class="cards__status-sale">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">скидка</div>
+						</div>
+					</div>
+					<div class="cards__price">
+						<div class="cards__price-full">
+							<span>599 </span>
+							<span>грн.</span>
+						</div>
+						<div class="cards__price-sale">
+							<span>1 250 грн.</span>
+							<span class="cards__price-sale-line"></span>
+						</div>
+					</div>
+					<div class="cards__btn">
+						<div class="cards__btn-icon"></div>
+						<div class="cards__btn-text">купить товар</div>
+					</div>
+					<div class="cards__action">
+						<div class="cards__action-compare">
+							<div class="cards__action-compare-icon"></div>
+							<div class="cards__action-compare-text">Сравнить товар</div>
+						</div>
+						<div class="cards__action-favor">
+							<div class="cards__action-compare-icon"></div>
+							<div class="cards__action-compare-text">В избранное</div>
+						</div>
+					</div>
+
+
+
+				</div><!--products__cards-items-->
+			</div>
+
+			<div class="col-3">
+				<div class="products__cards-items">
+					<div class="cards__mark">Mark</div>
+					<div class="cards__description">
+						<span>Антифриз Fosser Antifreeze</span>
+						<span>FA 12 Readymix 1 л Concentrat, Germany</span>
+					</div>
+					<div class="cards__rate">
+						<div class="cards__rate-stars"></div>
+						<div class="cards__rate-feeedback">Отзывы (10)</div>
+						<div class="cards__rate-availability">В наличии: 24 шт</div>
+					</div>
+					<div class="cards__main">
+						<div class="cards__feature">
+							<div class="cards__feature-summer">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">Летняя</div>
+							</div>
+							<!-- <div class="cards__feature-car">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">легковая</div>
+							</div> -->
+							<div class="cards__feature-new">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">новая</div>
+							</div>
+						</div>
+						<div class="cards_img">
+							<img src="img/shina-2.jpg" alt="goods" width="160" align="middle">
+						</div>
+					</div>
+					<div class="cards__status">
+						<div class="cards__status-new">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">Новинка</div>
+						</div>
+						<div class="cards__status-popular">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">Хит</div>
+						</div>
+						<!-- <div class="cards__status-sale">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">скидка</div>
+						</div> -->
+					</div>
+					<div class="cards__price">
+						<div class="cards__price-full">
+							<span>599 </span>
+							<span>грн.</span>
+						</div>
+						<div class="cards__price-sale">
+							<span>1 250 грн.</span>
+							<span class="cards__price-sale-line"></span>
+						</div>
+					</div>
+					<div class="cards__btn">
+						<div class="cards__btn-icon"></div>
+						<div class="cards__btn-text">купить товар</div>
+					</div>
+					<div class="cards__action">
+						<div class="cards__action-compare">
+							<div class="cards__action-compare-icon"></div>
+							<div class="cards__action-compare-text">Сравнить товар</div>
+						</div>
+						<div class="cards__action-favor">
+							<div class="cards__action-compare-icon"></div>
+							<div class="cards__action-compare-text">В избранное</div>
+						</div>
+					</div>
+
+
+
+				</div><!--products__cards-items-->
+			</div>
+
+			<div class="col-3">
+				<div class="products__cards-items">
+					<div class="cards__mark">Mark</div>
+					<div class="cards__description">
+						<span>Антифриз Fosser Antifreeze</span>
+						<span>FA 12 Readymix 1 л Concentrat, Germany</span>
+					</div>
+					<div class="cards__rate">
+						<div class="cards__rate-stars"></div>
+						<div class="cards__rate-feeedback">Без отзывов</div>
+						<div class="cards__rate-availability">В наличии: 24 шт</div>
+					</div>
+					<div class="cards__main">
+						<div class="cards__feature">
+							<div class="cards__feature-summer">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">Летняя</div>
+							</div>
+							<div class="cards__feature-car">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">легковая</div>
+							</div>
+							<div class="cards__feature-new">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">новая</div>
+							</div>
+						</div>
+						<div class="cards_img">
+							<img src="img/shina-3.jpg" alt="goods" width="160" align="middle">
+						</div>
+					</div>
+					<div class="cards__status">
+						<div class="cards__status-new">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">Новинка</div>
+						</div>
+						<!-- <div class="cards__status-popular">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">Хит</div>
+						</div> -->
+						<!-- <div class="cards__status-sale">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">скидка</div>
+						</div> -->
+					</div>
+					<div class="cards__price">
+						<div class="cards__price-full">
+							<span>9 570 </span>
+							<span>грн.</span>
+						</div>
+						<div class="cards__price-sale">
+							<span>11 250 грн.</span>
+							<span class="cards__price-sale-line"></span>
+						</div>
+					</div>
+					<div class="cards__btn">
+						<div class="cards__btn-icon"></div>
+						<div class="cards__btn-text">купить товар</div>
+					</div>
+					<div class="cards__action">
+						<div class="cards__action-compare">
+							<div class="cards__action-compare-icon"></div>
+							<div class="cards__action-compare-text">Сравнить товар</div>
+						</div>
+						<div class="cards__action-favor">
+							<div class="cards__action-compare-icon"></div>
+							<div class="cards__action-compare-text">В избранное</div>
+						</div>
+					</div>
+
+
+
+				</div><!--products__cards-items-->
+			</div>
+
+			<div class="col-3">
+				<div class="products__cards-items last">
+					<div class="cards__mark">Mark</div>
+					<div class="cards__description">
+						<span>Антифриз Fosser Antifreeze</span>
+						<!-- <span>FA 12 Readymix 1 л Concentrat, Germany</span> -->
+					</div>
+					<div class="cards__rate">
+						<div class="cards__rate-stars"></div>
+						<div class="cards__rate-feeedback">Отзывы (10)</div>
+						<div class="cards__rate-availability">В наличии: 24 шт</div>
+					</div>
+					<div class="cards__main">
+						<div class="cards__feature">
+							<div class="cards__feature-summer">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">Летняя</div>
+							</div>
+							<div class="cards__feature-car">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">легковая</div>
+							</div>
+							<!-- <div class="cards__feature-new">
+								<div class="cards__feature-icon"></div>
+								<div class="cards__feature-text">новая</div>
+							</div> -->
+						</div>
+						<div class="cards_img">
+							<img src="img/shina-4.jpg" alt="goods" width="160" align="middle">
+						</div>
+					</div>
+					<div class="cards__status">
+						<!-- <div class="cards__status-new">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">Новинка</div>
+						</div>
+						<div class="cards__status-popular">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">Хит</div>
+						</div>
+						<div class="cards__status-sale">
+							<div class="cards__status-icon"></div>
+							<div class="cards__status-text">скидка</div>
+						</div> -->
+					</div>
+					<div class="cards__price">
+						<div class="cards__price-full">
+							<span>599 </span>
+							<span>грн.</span>
+						</div>
+						<!-- <div class="cards__price-sale">
+							<span>1 250 грн.</span>
+							<span class="cards__price-sale-line"></span>
+						</div> -->
+					</div>
+					<div class="cards__btn">
+						<div class="cards__btn-icon"></div>
+						<div class="cards__btn-text">купить товар</div>
+					</div>
+					<div class="cards__action">
+						<div class="cards__action-compare">
+							<div class="cards__action-compare-icon"></div>
+							<div class="cards__action-compare-text">Сравнить товар</div>
+						</div>
+						<div class="cards__action-favor">
+							<div class="cards__action-compare-icon"></div>
+							<div class="cards__action-compare-text">В избранное</div>
+						</div>
+					</div>
+
+
+
+				</div><!--products__cards-items-->
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+
+<footer class="">
+	<div class="footer__main">
+		<div class="container">
+			<div class="col-6">
+				<div class="footer_block">
+					<div class="col-11">
+						<div class="footer_block-title">
+							<span>Блок 1</span>
+						</div>
+						<div class="footer_block-subscibe">
+							<div class="subscibe__title">Будьте в курсе новостей и новинок!</div>
+							<div class="subscibe__text">Подписывайтесь на рассылку</div>
+							<div class="subscibe__form">
+								<form role="form" method="post" action="" id="userSubscribe">
+									<fieldset>
+										<label for="footerForm">
+											<input type="email" placeholder="Укажите свой email для подписки" id="inputEmail">
+										</label>
+										<button>подписаться</button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="footer_block">
+					<div class="footer_block-title">
+						<span>Блок ссылок 1</span>
+					</div>
+					<div class="footer_block-link">
+						<a href="#">Ссылка 1</a>
+						<a href="#">Ссылка 2</a>
+						<a href="#">Ссылка 3</a>
+						<a href="#">Ссылка 4</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="footer_block">
+					<div class="footer_block-title">
+						<span>Блок 1</span>
+					</div>
+					<div class="footer_block-link">
+						<a href="#">Ссылка 1</a>
+						<a href="#">Ссылка 2</a>
+						<a href="#">Ссылка 3</a>
+						<a href="#">Ссылка 4</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="footer_block">
+					<div class="footer_block-title">
+						<span>Блок ссылок 3</span>
+					</div>
+					<div class="footer_block-link">
+						<a href="#">Ссылка 1</a>
+						<a href="#">Ссылка 2</a>
+						<a href="#">Ссылка 3</a>
+						<a href="#">Ссылка 4</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="col-6">
+				<div class="footer__bottom-left">
+					<div class="footer__bottom-labe">
+						<img src="img/Test_grey.png" alt="test labe">
+					</div>
+					<div class="footer__bottom-rights"><span>© Copyrith 2017. </span><span>Тестовое задание Wezom</span></div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="footer__bottom-social">
+					<div class="social-vk">
+						<i class="fab fa-vk"></i>
+					</div>
+					<div class="social-facebook">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+					<div class="social-twitter">
+						<i class="fab fa-twitter"></i>
+					</div>
+					<div class="social-youtube">
+						<i class="fab fa-youtube"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="footer__bottom-right">
+					<div class="footer__bottom-logo">
+						<img src="img/wezom.png" alt="">
+					</div>
+					<div class="footer__bottom-test">
+						<div class="footer__bottom-text">Разработка тестового</div>
+						<div class="footer__bottom-agency">Wezom Agency</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<!-- <script src="js/script-header.js"></script>
+<script src="js/script-form.js"></script> -->
+<!-- <script src="js/script-enter.js"></script> -->
+<script src="js/jquery.validate.js"></script>
+<script src="js/script.js"></script>
+<!-- <script src="js/script.js"></script> -->
+
+
+
+</body>
+</html>
