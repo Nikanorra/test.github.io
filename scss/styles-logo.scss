@@ -1,0 +1,75 @@
+@import "vars.scss";
+
+.info {
+
+}
+.info .container {
+  display: flex;
+  padding: 12px 0 38px 0;
+  align-items: center;
+}
+.info__contacts {
+  line-height: 49px;
+  display: flex;
+  justify-content: flex-start;
+}
+.info__contacts-wrapp {
+  background: $colorBgLight;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px 0 12px;
+  color: $colorBlack;
+  font-size: $fontSize16;
+  font-style: italic;
+  font-weight: bold;
+}
+.info__contacts-number:first-child {
+  margin-right: 40px;
+}
+.info__contacts-phone {
+  background-color: $colorBaseOrange;
+  color: $colorWhite;
+  text-transform: uppercase;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+}
+.info__contacts-phone span {
+  padding-left: 7px;
+}
+
+
+.info__special {
+  display: flex;
+  justify-content: space-around;
+}
+.info__special-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info__special-control-icon {
+  margin-top: -10px;
+  justify-content: space-around;
+}
+.info__special-control-active {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.info__special-control-active__number {
+  position: absolute;
+  color: $colorWhite;
+  font-size: $fontSize11;
+  margin: 0 auto;
+  top: 4px;
+}
+.info__special-control-active__img {
+
+}
+
+.info__special-control-text {
+  font-size: $fontSize10;
+  color: #3d3d3d;
+  margin-top: 10px;
+}
